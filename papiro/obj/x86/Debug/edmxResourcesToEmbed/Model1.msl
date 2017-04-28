@@ -1,0 +1,632 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="papiro_finalModelStoreContainer" CdmEntityContainer="papiro_finalEntities">
+    <EntitySetMapping Name="activos_fijos">
+      <EntityTypeMapping TypeName="papiro_finalModel.activos_fijos">
+        <MappingFragment StoreEntitySet="activos_fijos">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="id_unidad_medida" ColumnName="id_unidad_medida" />
+          <ScalarProperty Name="cantidad_real" ColumnName="cantidad_real" />
+          <ScalarProperty Name="id_entrada" ColumnName="id_entrada" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="id_tipo_activo_fijo" ColumnName="id_tipo_activo_fijo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="avisos">
+      <EntityTypeMapping TypeName="papiro_finalModel.avisos">
+        <MappingFragment StoreEntitySet="avisos">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="id_contrato" ColumnName="id_contrato" />
+          <ScalarProperty Name="id_operacion" ColumnName="id_operacion" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="balance">
+      <EntityTypeMapping TypeName="papiro_finalModel.balance">
+        <MappingFragment StoreEntitySet="balance">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="efectivo_caja" ColumnName="efectivo_caja" />
+          <ScalarProperty Name="efectivo_banco" ColumnName="efectivo_banco" />
+          <ScalarProperty Name="cuentas_por_cobrar" ColumnName="cuentas_por_cobrar" />
+          <ScalarProperty Name="inventario" ColumnName="inventario" />
+          <ScalarProperty Name="activos_fijo_tangible" ColumnName="activos_fijo_tangible" />
+          <ScalarProperty Name="gasto" ColumnName="gasto" />
+          <ScalarProperty Name="costo" ColumnName="costo" />
+          <ScalarProperty Name="cuentas_por_pagar" ColumnName="cuentas_por_pagar" />
+          <ScalarProperty Name="papiro_capital" ColumnName="papiro_capital" />
+          <ScalarProperty Name="ingreso" ColumnName="ingreso" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="utiles_herramientas" ColumnName="utiles_herramientas" />
+          <ScalarProperty Name="nominas_pagar" ColumnName="nominas_pagar" />
+          <ScalarProperty Name="cobro_anticipado" ColumnName="cobro_anticipado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bitacora">
+      <EntityTypeMapping TypeName="papiro_finalModel.bitacora">
+        <MappingFragment StoreEntitySet="bitacora">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="nombre_usuario" ColumnName="nombre_usuario" />
+          <ScalarProperty Name="accion_realizada" ColumnName="accion_realizada" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cliente">
+      <EntityTypeMapping TypeName="papiro_finalModel.cliente">
+        <MappingFragment StoreEntitySet="cliente">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="nombre_contacto" ColumnName="nombre_contacto" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="direccion_contacto" ColumnName="direccion_contacto" />
+          <ScalarProperty Name="empresa" ColumnName="empresa" />
+          <ScalarProperty Name="preferencia_contacto" ColumnName="preferencia_contacto" />
+          <ScalarProperty Name="contacto_brithday" ColumnName="contacto_brithday" />
+          <ScalarProperty Name="prioridad_fija" ColumnName="prioridad_fija" />
+          <ScalarProperty Name="privado" ColumnName="privado" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cobro_anticipado">
+      <EntityTypeMapping TypeName="papiro_finalModel.cobro_anticipado">
+        <MappingFragment StoreEntitySet="cobro_anticipado">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="tipo_cobro" ColumnName="tipo_cobro" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="comprobante">
+      <EntityTypeMapping TypeName="papiro_finalModel.comprobante">
+        <MappingFragment StoreEntitySet="comprobante">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="id_operacion" ColumnName="id_operacion" />
+          <ScalarProperty Name="dir_fich_comprobante" ColumnName="dir_fich_comprobante" />
+          <ScalarProperty Name="cant_hojas_imprimidas" ColumnName="cant_hojas_imprimidas" />
+          <ScalarProperty Name="fecha_ultima_impresion" ColumnName="fecha_ultima_impresion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="contrato">
+      <EntityTypeMapping TypeName="papiro_finalModel.contrato">
+        <MappingFragment StoreEntitySet="contrato">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="id_tipo_contrato" ColumnName="id_tipo_contrato" />
+          <ScalarProperty Name="id_tipo_pago" ColumnName="id_tipo_pago" />
+          <ScalarProperty Name="cant_dinero" ColumnName="cant_dinero" />
+          <ScalarProperty Name="fecha_inic" ColumnName="fecha_inic" />
+          <ScalarProperty Name="fecha_fin" ColumnName="fecha_fin" />
+          <ScalarProperty Name="terminado" ColumnName="terminado" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="cant_dinero_utilizado" ColumnName="cant_dinero_utilizado" />
+          <ScalarProperty Name="dir_fich_contrato" ColumnName="dir_fich_contrato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="costo">
+      <EntityTypeMapping TypeName="papiro_finalModel.costo">
+        <MappingFragment StoreEntitySet="costo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+          <ScalarProperty Name="costo_por_unidad" ColumnName="costo_por_unidad" />
+          <ScalarProperty Name="id_operacion" ColumnName="id_operacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cuentas_por_cobrar">
+      <EntityTypeMapping TypeName="papiro_finalModel.cuentas_por_cobrar">
+        <MappingFragment StoreEntitySet="cuentas_por_cobrar">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_operacion" ColumnName="id_operacion" />
+          <ScalarProperty Name="ejecutada" ColumnName="ejecutada" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cuentas_por_pagar">
+      <EntityTypeMapping TypeName="papiro_finalModel.cuentas_por_pagar">
+        <MappingFragment StoreEntitySet="cuentas_por_pagar">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="ejecutada" ColumnName="ejecutada" />
+          <ScalarProperty Name="id_operacion" ColumnName="id_operacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="entrada">
+      <EntityTypeMapping TypeName="papiro_finalModel.entrada">
+        <MappingFragment StoreEntitySet="entrada">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_proveedor" ColumnName="id_proveedor" />
+          <ScalarProperty Name="importe" ColumnName="importe" />
+          <ScalarProperty Name="id_pago_efectivo" ColumnName="id_pago_efectivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="factura">
+      <EntityTypeMapping TypeName="papiro_finalModel.factura">
+        <MappingFragment StoreEntitySet="factura">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="dir_fich_factura" ColumnName="dir_fich_factura" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="id_contrato" ColumnName="id_contrato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="forma_pago">
+      <EntityTypeMapping TypeName="papiro_finalModel.forma_pago">
+        <MappingFragment StoreEntitySet="forma_pago">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="forma_pago_efectivo">
+      <EntityTypeMapping TypeName="papiro_finalModel.forma_pago_efectivo">
+        <MappingFragment StoreEntitySet="forma_pago_efectivo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="funciones">
+      <EntityTypeMapping TypeName="papiro_finalModel.funciones">
+        <MappingFragment StoreEntitySet="funciones">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="funcion_padre" ColumnName="funcion_padre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gasto">
+      <EntityTypeMapping TypeName="papiro_finalModel.gasto">
+        <MappingFragment StoreEntitySet="gasto">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre_cuenta" ColumnName="nombre_cuenta" />
+          <ScalarProperty Name="nombre_partida" ColumnName="nombre_partida" />
+          <ScalarProperty Name="gasto1" ColumnName="gasto" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="pendiente" ColumnName="pendiente" />
+          <ScalarProperty Name="nombre_elemento" ColumnName="nombre_elemento" />
+          <ScalarProperty Name="efectivo_en" ColumnName="efectivo_en" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ingreso">
+      <EntityTypeMapping TypeName="papiro_finalModel.ingreso">
+        <MappingFragment StoreEntitySet="ingreso">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_operacion" ColumnName="id_operacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="operacion_3ero">
+      <EntityTypeMapping TypeName="papiro_finalModel.operacion_3ero">
+        <MappingFragment StoreEntitySet="operacion_3ero">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_proveedor" ColumnName="id_proveedor" />
+          <ScalarProperty Name="id_tipo_operacion_3ero" ColumnName="id_tipo_operacion_3ero" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="id_operacion" ColumnName="id_operacion" />
+          <ScalarProperty Name="valor_operacion_3ero" ColumnName="valor_operacion_3ero" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="operaciones">
+      <EntityTypeMapping TypeName="papiro_finalModel.operaciones">
+        <MappingFragment StoreEntitySet="operaciones">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_tipo_operacion" ColumnName="id_tipo_operacion" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="id_forma_pago" ColumnName="id_forma_pago" />
+          <ScalarProperty Name="pendiente" ColumnName="pendiente" />
+          <ScalarProperty Name="id_contrato" ColumnName="id_contrato" />
+          <ScalarProperty Name="id_comercial" ColumnName="id_comercial" />
+          <ScalarProperty Name="id_disenador" ColumnName="id_disenador" />
+          <ScalarProperty Name="id_operador" ColumnName="id_operador" />
+          <ScalarProperty Name="gasto" ColumnName="gasto" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_tipo_producto" ColumnName="id_tipo_producto" />
+          <ScalarProperty Name="oferta_especial" ColumnName="oferta_especial" />
+          <ScalarProperty Name="pendiente_imprimir" ColumnName="pendiente_imprimir" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="valor_tipo_operacion" ColumnName="valor_tipo_operacion" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="costo" ColumnName="costo" />
+          <ScalarProperty Name="facturada" ColumnName="facturada" />
+          <ScalarProperty Name="id_factura" ColumnName="id_factura" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="prioridad">
+      <EntityTypeMapping TypeName="papiro_finalModel.prioridad">
+        <MappingFragment StoreEntitySet="prioridad">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="valor_cant_operaciones" ColumnName="valor_cant_operaciones" />
+          <ScalarProperty Name="valor_por_ingreso" ColumnName="valor_por_ingreso" />
+          <ScalarProperty Name="valor_ambos" ColumnName="valor_ambos" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="producto">
+      <EntityTypeMapping TypeName="papiro_finalModel.producto">
+        <MappingFragment StoreEntitySet="producto">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="id_unidad_medida" ColumnName="id_unidad_medida" />
+          <ScalarProperty Name="cantidad_real" ColumnName="cantidad_real" />
+          <ScalarProperty Name="id_entrada" ColumnName="id_entrada" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="id_tipo_producto" ColumnName="id_tipo_producto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="proveedor">
+      <EntityTypeMapping TypeName="papiro_finalModel.proveedor">
+        <MappingFragment StoreEntitySet="proveedor">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rol">
+      <EntityTypeMapping TypeName="papiro_finalModel.rol">
+        <MappingFragment StoreEntitySet="rol">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="submayor_activos_fijo_tangible">
+      <EntityTypeMapping TypeName="papiro_finalModel.submayor_activos_fijo_tangible">
+        <MappingFragment StoreEntitySet="submayor_activos_fijo_tangible">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="debito" ColumnName="debito" />
+          <ScalarProperty Name="credito" ColumnName="credito" />
+          <ScalarProperty Name="saldo" ColumnName="saldo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="submayor_cobro_anticipado">
+      <EntityTypeMapping TypeName="papiro_finalModel.submayor_cobro_anticipado">
+        <MappingFragment StoreEntitySet="submayor_cobro_anticipado">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="debito" ColumnName="debito" />
+          <ScalarProperty Name="credito" ColumnName="credito" />
+          <ScalarProperty Name="saldo" ColumnName="saldo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="submayor_costo">
+      <EntityTypeMapping TypeName="papiro_finalModel.submayor_costo">
+        <MappingFragment StoreEntitySet="submayor_costo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="debito" ColumnName="debito" />
+          <ScalarProperty Name="credito" ColumnName="credito" />
+          <ScalarProperty Name="saldo" ColumnName="saldo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="submayor_cuentas_cobrar">
+      <EntityTypeMapping TypeName="papiro_finalModel.submayor_cuentas_cobrar">
+        <MappingFragment StoreEntitySet="submayor_cuentas_cobrar">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="debito" ColumnName="debito" />
+          <ScalarProperty Name="credito" ColumnName="credito" />
+          <ScalarProperty Name="saldo" ColumnName="saldo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="submayor_cuentas_por_pagar">
+      <EntityTypeMapping TypeName="papiro_finalModel.submayor_cuentas_por_pagar">
+        <MappingFragment StoreEntitySet="submayor_cuentas_por_pagar">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="debito" ColumnName="debito" />
+          <ScalarProperty Name="credito" ColumnName="credito" />
+          <ScalarProperty Name="saldo" ColumnName="saldo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="submayor_efectivo_banco">
+      <EntityTypeMapping TypeName="papiro_finalModel.submayor_efectivo_banco">
+        <MappingFragment StoreEntitySet="submayor_efectivo_banco">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="debito" ColumnName="debito" />
+          <ScalarProperty Name="credito" ColumnName="credito" />
+          <ScalarProperty Name="saldo" ColumnName="saldo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="submayor_efectivo_caja">
+      <EntityTypeMapping TypeName="papiro_finalModel.submayor_efectivo_caja">
+        <MappingFragment StoreEntitySet="submayor_efectivo_caja">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="debito" ColumnName="debito" />
+          <ScalarProperty Name="credito" ColumnName="credito" />
+          <ScalarProperty Name="saldo" ColumnName="saldo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="submayor_gasto">
+      <EntityTypeMapping TypeName="papiro_finalModel.submayor_gasto">
+        <MappingFragment StoreEntitySet="submayor_gasto">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="debito" ColumnName="debito" />
+          <ScalarProperty Name="credito" ColumnName="credito" />
+          <ScalarProperty Name="saldo" ColumnName="saldo" />
+          <ScalarProperty Name="id_producto" ColumnName="id_producto" />
+          <ScalarProperty Name="id_utiles" ColumnName="id_utiles" />
+          <ScalarProperty Name="id_activos_fijos" ColumnName="id_activos_fijos" />
+          <ScalarProperty Name="id_usuario_salario" ColumnName="id_usuario_salario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="submayor_ingreso">
+      <EntityTypeMapping TypeName="papiro_finalModel.submayor_ingreso">
+        <MappingFragment StoreEntitySet="submayor_ingreso">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="debito" ColumnName="debito" />
+          <ScalarProperty Name="credito" ColumnName="credito" />
+          <ScalarProperty Name="saldo" ColumnName="saldo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="submayor_inventario">
+      <EntityTypeMapping TypeName="papiro_finalModel.submayor_inventario">
+        <MappingFragment StoreEntitySet="submayor_inventario">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="debito" ColumnName="debito" />
+          <ScalarProperty Name="credito" ColumnName="credito" />
+          <ScalarProperty Name="saldo" ColumnName="saldo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="submayor_nomina">
+      <EntityTypeMapping TypeName="papiro_finalModel.submayor_nomina">
+        <MappingFragment StoreEntitySet="submayor_nomina">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="debito" ColumnName="debito" />
+          <ScalarProperty Name="credito" ColumnName="credito" />
+          <ScalarProperty Name="saldo" ColumnName="saldo" />
+          <ScalarProperty Name="ultimo_pago" ColumnName="ultimo_pago" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="submayor_papiro_capital">
+      <EntityTypeMapping TypeName="papiro_finalModel.submayor_papiro_capital">
+        <MappingFragment StoreEntitySet="submayor_papiro_capital">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="debito" ColumnName="debito" />
+          <ScalarProperty Name="credito" ColumnName="credito" />
+          <ScalarProperty Name="saldo" ColumnName="saldo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="submayor_utiles">
+      <EntityTypeMapping TypeName="papiro_finalModel.submayor_utiles">
+        <MappingFragment StoreEntitySet="submayor_utiles">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="descipcion" ColumnName="descipcion" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="debito" ColumnName="debito" />
+          <ScalarProperty Name="credito" ColumnName="credito" />
+          <ScalarProperty Name="saldo" ColumnName="saldo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="telefonos">
+      <EntityTypeMapping TypeName="papiro_finalModel.telefonos">
+        <MappingFragment StoreEntitySet="telefonos">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="id_tipo_telefono" ColumnName="id_tipo_telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipo_activos_fijos">
+      <EntityTypeMapping TypeName="papiro_finalModel.tipo_activos_fijos">
+        <MappingFragment StoreEntitySet="tipo_activos_fijos">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipo_contrato">
+      <EntityTypeMapping TypeName="papiro_finalModel.tipo_contrato">
+        <MappingFragment StoreEntitySet="tipo_contrato">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipo_operacion">
+      <EntityTypeMapping TypeName="papiro_finalModel.tipo_operacion">
+        <MappingFragment StoreEntitySet="tipo_operacion">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="valor_operacion" ColumnName="valor_operacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipo_operacion_3ero">
+      <EntityTypeMapping TypeName="papiro_finalModel.tipo_operacion_3ero">
+        <MappingFragment StoreEntitySet="tipo_operacion_3ero">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="valor_operacion" ColumnName="valor_operacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipo_pago">
+      <EntityTypeMapping TypeName="papiro_finalModel.tipo_pago">
+        <MappingFragment StoreEntitySet="tipo_pago">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipo_producto">
+      <EntityTypeMapping TypeName="papiro_finalModel.tipo_producto">
+        <MappingFragment StoreEntitySet="tipo_producto">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipo_telefono">
+      <EntityTypeMapping TypeName="papiro_finalModel.tipo_telefono">
+        <MappingFragment StoreEntitySet="tipo_telefono">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipo_utiles">
+      <EntityTypeMapping TypeName="papiro_finalModel.tipo_utiles">
+        <MappingFragment StoreEntitySet="tipo_utiles">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="unidad_medida">
+      <EntityTypeMapping TypeName="papiro_finalModel.unidad_medida">
+        <MappingFragment StoreEntitySet="unidad_medida">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="siglas" ColumnName="siglas" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_telef_cliente">
+      <EntityTypeMapping TypeName="papiro_finalModel.user_telef_cliente">
+        <MappingFragment StoreEntitySet="user_telef_cliente">
+          <ScalarProperty Name="id_telefono" ColumnName="id_telefono" />
+          <ScalarProperty Name="id_usuario" ColumnName="id_usuario" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuarios">
+      <EntityTypeMapping TypeName="papiro_finalModel.usuarios">
+        <MappingFragment StoreEntitySet="usuarios">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="fecha_nacimiento" ColumnName="fecha_nacimiento" />
+          <ScalarProperty Name="preferencias" ColumnName="preferencias" />
+          <ScalarProperty Name="salario_fijo" ColumnName="salario_fijo" />
+          <ScalarProperty Name="por_ciento_operaciones" ColumnName="por_ciento_operaciones" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="salario_extra_operaciones" ColumnName="salario_extra_operaciones" />
+          <ScalarProperty Name="login_nombre" ColumnName="login_nombre" />
+          <ScalarProperty Name="activado" ColumnName="activado" />
+          <ScalarProperty Name="a_pagar" ColumnName="a_pagar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="utiles_herramientas">
+      <EntityTypeMapping TypeName="papiro_finalModel.utiles_herramientas">
+        <MappingFragment StoreEntitySet="utiles_herramientas">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="id_unidad_medida" ColumnName="id_unidad_medida" />
+          <ScalarProperty Name="cantidad_real" ColumnName="cantidad_real" />
+          <ScalarProperty Name="id_entrada" ColumnName="id_entrada" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="id_tipo_utiles" ColumnName="id_tipo_utiles" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="operacion_producto" TypeName="papiro_finalModel.operacion_producto" StoreEntitySet="operacion_producto">
+      <EndProperty Name="operaciones">
+        <ScalarProperty Name="id" ColumnName="id_operacion" />
+      </EndProperty>
+      <EndProperty Name="producto">
+        <ScalarProperty Name="id" ColumnName="id_producro" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="rol_funciones" TypeName="papiro_finalModel.rol_funciones" StoreEntitySet="rol_funciones">
+      <EndProperty Name="rol">
+        <ScalarProperty Name="id" ColumnName="id_rol" />
+      </EndProperty>
+      <EndProperty Name="funciones">
+        <ScalarProperty Name="id" ColumnName="id_funcion" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="rol_usuario" TypeName="papiro_finalModel.rol_usuario" StoreEntitySet="rol_usuario">
+      <EndProperty Name="usuarios">
+        <ScalarProperty Name="id" ColumnName="id_usuario" />
+      </EndProperty>
+      <EndProperty Name="rol">
+        <ScalarProperty Name="id" ColumnName="id_rol" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,1741 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="papiro_finalModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="papiro_finalModelStoreContainer">
+    <EntitySet Name="activos_fijos" EntityType="papiro_finalModel.Store.activos_fijos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="avisos" EntityType="papiro_finalModel.Store.avisos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="balance" EntityType="papiro_finalModel.Store.balance" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="bitacora" EntityType="papiro_finalModel.Store.bitacora" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cliente" EntityType="papiro_finalModel.Store.cliente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cobro_anticipado" EntityType="papiro_finalModel.Store.cobro_anticipado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="comprobante" EntityType="papiro_finalModel.Store.comprobante" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="contrato" EntityType="papiro_finalModel.Store.contrato" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="costo" EntityType="papiro_finalModel.Store.costo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cuentas_por_cobrar" EntityType="papiro_finalModel.Store.cuentas_por_cobrar" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="cuentas_por_pagar" EntityType="papiro_finalModel.Store.cuentas_por_pagar" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="entrada" EntityType="papiro_finalModel.Store.entrada" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="factura" EntityType="papiro_finalModel.Store.factura" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="forma_pago" EntityType="papiro_finalModel.Store.forma_pago" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="forma_pago_efectivo" EntityType="papiro_finalModel.Store.forma_pago_efectivo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="funciones" EntityType="papiro_finalModel.Store.funciones" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="gasto" EntityType="papiro_finalModel.Store.gasto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ingreso" EntityType="papiro_finalModel.Store.ingreso" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="operacion_3ero" EntityType="papiro_finalModel.Store.operacion_3ero" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="operacion_producto" EntityType="papiro_finalModel.Store.operacion_producto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="operaciones" EntityType="papiro_finalModel.Store.operaciones" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="prioridad" EntityType="papiro_finalModel.Store.prioridad" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="producto" EntityType="papiro_finalModel.Store.producto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="proveedor" EntityType="papiro_finalModel.Store.proveedor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="rol" EntityType="papiro_finalModel.Store.rol" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="rol_funciones" EntityType="papiro_finalModel.Store.rol_funciones" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="rol_usuario" EntityType="papiro_finalModel.Store.rol_usuario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="submayor_activos_fijo_tangible" EntityType="papiro_finalModel.Store.submayor_activos_fijo_tangible" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="submayor_cobro_anticipado" EntityType="papiro_finalModel.Store.submayor_cobro_anticipado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="submayor_costo" EntityType="papiro_finalModel.Store.submayor_costo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="submayor_cuentas_cobrar" EntityType="papiro_finalModel.Store.submayor_cuentas_cobrar" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="submayor_cuentas_por_pagar" EntityType="papiro_finalModel.Store.submayor_cuentas_por_pagar" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="submayor_efectivo_banco" EntityType="papiro_finalModel.Store.submayor_efectivo_banco" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="submayor_efectivo_caja" EntityType="papiro_finalModel.Store.submayor_efectivo_caja" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="submayor_gasto" EntityType="papiro_finalModel.Store.submayor_gasto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="submayor_ingreso" EntityType="papiro_finalModel.Store.submayor_ingreso" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="submayor_inventario" EntityType="papiro_finalModel.Store.submayor_inventario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="submayor_nomina" EntityType="papiro_finalModel.Store.submayor_nomina" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="submayor_papiro_capital" EntityType="papiro_finalModel.Store.submayor_papiro_capital" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="submayor_utiles" EntityType="papiro_finalModel.Store.submayor_utiles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="telefonos" EntityType="papiro_finalModel.Store.telefonos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tipo_activos_fijos" EntityType="papiro_finalModel.Store.tipo_activos_fijos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tipo_contrato" EntityType="papiro_finalModel.Store.tipo_contrato" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tipo_operacion" EntityType="papiro_finalModel.Store.tipo_operacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tipo_operacion_3ero" EntityType="papiro_finalModel.Store.tipo_operacion_3ero" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tipo_pago" EntityType="papiro_finalModel.Store.tipo_pago" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tipo_producto" EntityType="papiro_finalModel.Store.tipo_producto" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tipo_telefono" EntityType="papiro_finalModel.Store.tipo_telefono" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tipo_utiles" EntityType="papiro_finalModel.Store.tipo_utiles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="unidad_medida" EntityType="papiro_finalModel.Store.unidad_medida" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="user_telef_cliente" EntityType="papiro_finalModel.Store.user_telef_cliente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="usuarios" EntityType="papiro_finalModel.Store.usuarios" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="utiles_herramientas" EntityType="papiro_finalModel.Store.utiles_herramientas" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="activos_fijos_fk" Association="papiro_finalModel.Store.activos_fijos_fk">
+      <End Role="unidad_medida" EntitySet="unidad_medida" />
+      <End Role="activos_fijos" EntitySet="activos_fijos" />
+    </AssociationSet>
+    <AssociationSet Name="activos_fijos_fk2" Association="papiro_finalModel.Store.activos_fijos_fk2">
+      <End Role="entrada" EntitySet="entrada" />
+      <End Role="activos_fijos" EntitySet="activos_fijos" />
+    </AssociationSet>
+    <AssociationSet Name="avisos_fk" Association="papiro_finalModel.Store.avisos_fk">
+      <End Role="contrato" EntitySet="contrato" />
+      <End Role="avisos" EntitySet="avisos" />
+    </AssociationSet>
+    <AssociationSet Name="avisos_fk2" Association="papiro_finalModel.Store.avisos_fk2">
+      <End Role="operaciones" EntitySet="operaciones" />
+      <End Role="avisos" EntitySet="avisos" />
+    </AssociationSet>
+    <AssociationSet Name="avisos_fk3" Association="papiro_finalModel.Store.avisos_fk3">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="avisos" EntitySet="avisos" />
+    </AssociationSet>
+    <AssociationSet Name="bitacora_fk" Association="papiro_finalModel.Store.bitacora_fk">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="bitacora" EntitySet="bitacora" />
+    </AssociationSet>
+    <AssociationSet Name="cobro_anticipado_fk" Association="papiro_finalModel.Store.cobro_anticipado_fk">
+      <End Role="cliente" EntitySet="cliente" />
+      <End Role="cobro_anticipado" EntitySet="cobro_anticipado" />
+    </AssociationSet>
+    <AssociationSet Name="comprobante_fk" Association="papiro_finalModel.Store.comprobante_fk">
+      <End Role="cliente" EntitySet="cliente" />
+      <End Role="comprobante" EntitySet="comprobante" />
+    </AssociationSet>
+    <AssociationSet Name="comprobante_fk2" Association="papiro_finalModel.Store.comprobante_fk2">
+      <End Role="operaciones" EntitySet="operaciones" />
+      <End Role="comprobante" EntitySet="comprobante" />
+    </AssociationSet>
+    <AssociationSet Name="contrato_fk" Association="papiro_finalModel.Store.contrato_fk">
+      <End Role="cliente" EntitySet="cliente" />
+      <End Role="contrato" EntitySet="contrato" />
+    </AssociationSet>
+    <AssociationSet Name="contrato_fk2" Association="papiro_finalModel.Store.contrato_fk2">
+      <End Role="tipo_contrato" EntitySet="tipo_contrato" />
+      <End Role="contrato" EntitySet="contrato" />
+    </AssociationSet>
+    <AssociationSet Name="contrato_fk3" Association="papiro_finalModel.Store.contrato_fk3">
+      <End Role="tipo_pago" EntitySet="tipo_pago" />
+      <End Role="contrato" EntitySet="contrato" />
+    </AssociationSet>
+    <AssociationSet Name="costo_fk" Association="papiro_finalModel.Store.costo_fk">
+      <End Role="producto" EntitySet="producto" />
+      <End Role="costo" EntitySet="costo" />
+    </AssociationSet>
+    <AssociationSet Name="costo_fk2" Association="papiro_finalModel.Store.costo_fk2">
+      <End Role="operaciones" EntitySet="operaciones" />
+      <End Role="costo" EntitySet="costo" />
+    </AssociationSet>
+    <AssociationSet Name="cuentas_por_cobrar_fk" Association="papiro_finalModel.Store.cuentas_por_cobrar_fk">
+      <End Role="operaciones" EntitySet="operaciones" />
+      <End Role="cuentas_por_cobrar" EntitySet="cuentas_por_cobrar" />
+    </AssociationSet>
+    <AssociationSet Name="cuentas_por_cobrar_fk2" Association="papiro_finalModel.Store.cuentas_por_cobrar_fk2">
+      <End Role="cliente" EntitySet="cliente" />
+      <End Role="cuentas_por_cobrar" EntitySet="cuentas_por_cobrar" />
+    </AssociationSet>
+    <AssociationSet Name="cuentas_por_pagar_fk" Association="papiro_finalModel.Store.cuentas_por_pagar_fk">
+      <End Role="operaciones" EntitySet="operaciones" />
+      <End Role="cuentas_por_pagar" EntitySet="cuentas_por_pagar" />
+    </AssociationSet>
+    <AssociationSet Name="entrada_fk" Association="papiro_finalModel.Store.entrada_fk">
+      <End Role="proveedor" EntitySet="proveedor" />
+      <End Role="entrada" EntitySet="entrada" />
+    </AssociationSet>
+    <AssociationSet Name="entrada_fk2" Association="papiro_finalModel.Store.entrada_fk2">
+      <End Role="forma_pago_efectivo" EntitySet="forma_pago_efectivo" />
+      <End Role="entrada" EntitySet="entrada" />
+    </AssociationSet>
+    <AssociationSet Name="factura_fk" Association="papiro_finalModel.Store.factura_fk">
+      <End Role="contrato" EntitySet="contrato" />
+      <End Role="factura" EntitySet="factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_activos_fijos_tipo_activos_fijos" Association="papiro_finalModel.Store.FK_activos_fijos_tipo_activos_fijos">
+      <End Role="tipo_activos_fijos" EntitySet="tipo_activos_fijos" />
+      <End Role="activos_fijos" EntitySet="activos_fijos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_submayor_gasto_usuarios" Association="papiro_finalModel.Store.FK_submayor_gasto_usuarios">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="submayor_gasto" EntitySet="submayor_gasto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_submayor_utiles_submayor_utiles" Association="papiro_finalModel.Store.FK_submayor_utiles_submayor_utiles">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="submayor_utiles" EntitySet="submayor_utiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_utiles_herramientas_tipo_utiles" Association="papiro_finalModel.Store.FK_utiles_herramientas_tipo_utiles">
+      <End Role="tipo_utiles" EntitySet="tipo_utiles" />
+      <End Role="utiles_herramientas" EntitySet="utiles_herramientas" />
+    </AssociationSet>
+    <AssociationSet Name="ingreso_fk" Association="papiro_finalModel.Store.ingreso_fk">
+      <End Role="operaciones" EntitySet="operaciones" />
+      <End Role="ingreso" EntitySet="ingreso" />
+    </AssociationSet>
+    <AssociationSet Name="operacion_3ero_fk" Association="papiro_finalModel.Store.operacion_3ero_fk">
+      <End Role="proveedor" EntitySet="proveedor" />
+      <End Role="operacion_3ero" EntitySet="operacion_3ero" />
+    </AssociationSet>
+    <AssociationSet Name="operacion_3ero_fk2" Association="papiro_finalModel.Store.operacion_3ero_fk2">
+      <End Role="tipo_operacion_3ero" EntitySet="tipo_operacion_3ero" />
+      <End Role="operacion_3ero" EntitySet="operacion_3ero" />
+    </AssociationSet>
+    <AssociationSet Name="operacion_3ero_fk3" Association="papiro_finalModel.Store.operacion_3ero_fk3">
+      <End Role="operaciones" EntitySet="operaciones" />
+      <End Role="operacion_3ero" EntitySet="operacion_3ero" />
+    </AssociationSet>
+    <AssociationSet Name="operacion_producto_fk" Association="papiro_finalModel.Store.operacion_producto_fk">
+      <End Role="operaciones" EntitySet="operaciones" />
+      <End Role="operacion_producto" EntitySet="operacion_producto" />
+    </AssociationSet>
+    <AssociationSet Name="operacion_producto_fk2" Association="papiro_finalModel.Store.operacion_producto_fk2">
+      <End Role="producto" EntitySet="producto" />
+      <End Role="operacion_producto" EntitySet="operacion_producto" />
+    </AssociationSet>
+    <AssociationSet Name="operaciones_fk" Association="papiro_finalModel.Store.operaciones_fk">
+      <End Role="tipo_operacion" EntitySet="tipo_operacion" />
+      <End Role="operaciones" EntitySet="operaciones" />
+    </AssociationSet>
+    <AssociationSet Name="operaciones_fk10" Association="papiro_finalModel.Store.operaciones_fk10">
+      <End Role="factura" EntitySet="factura" />
+      <End Role="operaciones" EntitySet="operaciones" />
+    </AssociationSet>
+    <AssociationSet Name="operaciones_fk2" Association="papiro_finalModel.Store.operaciones_fk2">
+      <End Role="cliente" EntitySet="cliente" />
+      <End Role="operaciones" EntitySet="operaciones" />
+    </AssociationSet>
+    <AssociationSet Name="operaciones_fk3" Association="papiro_finalModel.Store.operaciones_fk3">
+      <End Role="forma_pago" EntitySet="forma_pago" />
+      <End Role="operaciones" EntitySet="operaciones" />
+    </AssociationSet>
+    <AssociationSet Name="operaciones_fk4" Association="papiro_finalModel.Store.operaciones_fk4">
+      <End Role="contrato" EntitySet="contrato" />
+      <End Role="operaciones" EntitySet="operaciones" />
+    </AssociationSet>
+    <AssociationSet Name="operaciones_fk5" Association="papiro_finalModel.Store.operaciones_fk5">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="operaciones" EntitySet="operaciones" />
+    </AssociationSet>
+    <AssociationSet Name="operaciones_fk6" Association="papiro_finalModel.Store.operaciones_fk6">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="operaciones" EntitySet="operaciones" />
+    </AssociationSet>
+    <AssociationSet Name="operaciones_fk7" Association="papiro_finalModel.Store.operaciones_fk7">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="operaciones" EntitySet="operaciones" />
+    </AssociationSet>
+    <AssociationSet Name="operaciones_fk8" Association="papiro_finalModel.Store.operaciones_fk8">
+      <End Role="tipo_producto" EntitySet="tipo_producto" />
+      <End Role="operaciones" EntitySet="operaciones" />
+    </AssociationSet>
+    <AssociationSet Name="operaciones_fk9" Association="papiro_finalModel.Store.operaciones_fk9">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="operaciones" EntitySet="operaciones" />
+    </AssociationSet>
+    <AssociationSet Name="prioridad_fk" Association="papiro_finalModel.Store.prioridad_fk">
+      <End Role="cliente" EntitySet="cliente" />
+      <End Role="prioridad" EntitySet="prioridad" />
+    </AssociationSet>
+    <AssociationSet Name="producto_fk" Association="papiro_finalModel.Store.producto_fk">
+      <End Role="unidad_medida" EntitySet="unidad_medida" />
+      <End Role="producto" EntitySet="producto" />
+    </AssociationSet>
+    <AssociationSet Name="producto_fk2" Association="papiro_finalModel.Store.producto_fk2">
+      <End Role="entrada" EntitySet="entrada" />
+      <End Role="producto" EntitySet="producto" />
+    </AssociationSet>
+    <AssociationSet Name="producto_fk3" Association="papiro_finalModel.Store.producto_fk3">
+      <End Role="tipo_producto" EntitySet="tipo_producto" />
+      <End Role="producto" EntitySet="producto" />
+    </AssociationSet>
+    <AssociationSet Name="rol_funciones_fk" Association="papiro_finalModel.Store.rol_funciones_fk">
+      <End Role="rol" EntitySet="rol" />
+      <End Role="rol_funciones" EntitySet="rol_funciones" />
+    </AssociationSet>
+    <AssociationSet Name="rol_funciones_fk2" Association="papiro_finalModel.Store.rol_funciones_fk2">
+      <End Role="funciones" EntitySet="funciones" />
+      <End Role="rol_funciones" EntitySet="rol_funciones" />
+    </AssociationSet>
+    <AssociationSet Name="rol_usuario_fk" Association="papiro_finalModel.Store.rol_usuario_fk">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="rol_usuario" EntitySet="rol_usuario" />
+    </AssociationSet>
+    <AssociationSet Name="rol_usuario_fk2" Association="papiro_finalModel.Store.rol_usuario_fk2">
+      <End Role="rol" EntitySet="rol" />
+      <End Role="rol_usuario" EntitySet="rol_usuario" />
+    </AssociationSet>
+    <AssociationSet Name="submayor_activos_fijo_tangible_fk" Association="papiro_finalModel.Store.submayor_activos_fijo_tangible_fk">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="submayor_activos_fijo_tangible" EntitySet="submayor_activos_fijo_tangible" />
+    </AssociationSet>
+    <AssociationSet Name="submayor_cobro_anticipado_fk" Association="papiro_finalModel.Store.submayor_cobro_anticipado_fk">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="submayor_cobro_anticipado" EntitySet="submayor_cobro_anticipado" />
+    </AssociationSet>
+    <AssociationSet Name="submayor_costo_fk" Association="papiro_finalModel.Store.submayor_costo_fk">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="submayor_costo" EntitySet="submayor_costo" />
+    </AssociationSet>
+    <AssociationSet Name="submayor_cuentas_cobrar_fk" Association="papiro_finalModel.Store.submayor_cuentas_cobrar_fk">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="submayor_cuentas_cobrar" EntitySet="submayor_cuentas_cobrar" />
+    </AssociationSet>
+    <AssociationSet Name="submayor_cuentas_por_pagar_fk" Association="papiro_finalModel.Store.submayor_cuentas_por_pagar_fk">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="submayor_cuentas_por_pagar" EntitySet="submayor_cuentas_por_pagar" />
+    </AssociationSet>
+    <AssociationSet Name="submayor_efectivo_banco_fk" Association="papiro_finalModel.Store.submayor_efectivo_banco_fk">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="submayor_efectivo_banco" EntitySet="submayor_efectivo_banco" />
+    </AssociationSet>
+    <AssociationSet Name="submayor_efectivo_caja_fk" Association="papiro_finalModel.Store.submayor_efectivo_caja_fk">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="submayor_efectivo_caja" EntitySet="submayor_efectivo_caja" />
+    </AssociationSet>
+    <AssociationSet Name="submayor_gasto_fk" Association="papiro_finalModel.Store.submayor_gasto_fk">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="submayor_gasto" EntitySet="submayor_gasto" />
+    </AssociationSet>
+    <AssociationSet Name="submayor_gasto_fk2" Association="papiro_finalModel.Store.submayor_gasto_fk2">
+      <End Role="producto" EntitySet="producto" />
+      <End Role="submayor_gasto" EntitySet="submayor_gasto" />
+    </AssociationSet>
+    <AssociationSet Name="submayor_gasto_fk3" Association="papiro_finalModel.Store.submayor_gasto_fk3">
+      <End Role="utiles_herramientas" EntitySet="utiles_herramientas" />
+      <End Role="submayor_gasto" EntitySet="submayor_gasto" />
+    </AssociationSet>
+    <AssociationSet Name="submayor_gasto_fk4" Association="papiro_finalModel.Store.submayor_gasto_fk4">
+      <End Role="activos_fijos" EntitySet="activos_fijos" />
+      <End Role="submayor_gasto" EntitySet="submayor_gasto" />
+    </AssociationSet>
+    <AssociationSet Name="submayor_ingreso_fk" Association="papiro_finalModel.Store.submayor_ingreso_fk">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="submayor_ingreso" EntitySet="submayor_ingreso" />
+    </AssociationSet>
+    <AssociationSet Name="submayor_inventario_fk" Association="papiro_finalModel.Store.submayor_inventario_fk">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="submayor_inventario" EntitySet="submayor_inventario" />
+    </AssociationSet>
+    <AssociationSet Name="submayor_nomina_fk" Association="papiro_finalModel.Store.submayor_nomina_fk">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="submayor_nomina" EntitySet="submayor_nomina" />
+    </AssociationSet>
+    <AssociationSet Name="submayor_papiro_capital_fk" Association="papiro_finalModel.Store.submayor_papiro_capital_fk">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="submayor_papiro_capital" EntitySet="submayor_papiro_capital" />
+    </AssociationSet>
+    <AssociationSet Name="telefonos_fk" Association="papiro_finalModel.Store.telefonos_fk">
+      <End Role="tipo_telefono" EntitySet="tipo_telefono" />
+      <End Role="telefonos" EntitySet="telefonos" />
+    </AssociationSet>
+    <AssociationSet Name="user_telef_cliente_fk" Association="papiro_finalModel.Store.user_telef_cliente_fk">
+      <End Role="telefonos" EntitySet="telefonos" />
+      <End Role="user_telef_cliente" EntitySet="user_telef_cliente" />
+    </AssociationSet>
+    <AssociationSet Name="user_telef_cliente_fk2" Association="papiro_finalModel.Store.user_telef_cliente_fk2">
+      <End Role="usuarios" EntitySet="usuarios" />
+      <End Role="user_telef_cliente" EntitySet="user_telef_cliente" />
+    </AssociationSet>
+    <AssociationSet Name="user_telef_cliente_fk3" Association="papiro_finalModel.Store.user_telef_cliente_fk3">
+      <End Role="cliente" EntitySet="cliente" />
+      <End Role="user_telef_cliente" EntitySet="user_telef_cliente" />
+    </AssociationSet>
+    <AssociationSet Name="utiles_herramientas_fk" Association="papiro_finalModel.Store.utiles_herramientas_fk">
+      <End Role="unidad_medida" EntitySet="unidad_medida" />
+      <End Role="utiles_herramientas" EntitySet="utiles_herramientas" />
+    </AssociationSet>
+    <AssociationSet Name="utiles_herramientas_fk2" Association="papiro_finalModel.Store.utiles_herramientas_fk2">
+      <End Role="entrada" EntitySet="entrada" />
+      <End Role="utiles_herramientas" EntitySet="utiles_herramientas" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="activos_fijos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="precio" Type="money" Nullable="false" />
+    <Property Name="cantidad" Type="int" Nullable="false" />
+    <Property Name="id_unidad_medida" Type="int" Nullable="false" />
+    <Property Name="cantidad_real" Type="int" Nullable="false" />
+    <Property Name="id_entrada" Type="int" Nullable="false" />
+    <Property Name="codigo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="id_tipo_activo_fijo" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="avisos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="id_contrato" Type="int" />
+    <Property Name="id_operacion" Type="int" />
+    <Property Name="id_usuario" Type="int" />
+  </EntityType>
+  <EntityType Name="balance">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="efectivo_caja" Type="money" Nullable="false" />
+    <Property Name="efectivo_banco" Type="money" Nullable="false" />
+    <Property Name="cuentas_por_cobrar" Type="money" Nullable="false" />
+    <Property Name="inventario" Type="money" Nullable="false" />
+    <Property Name="activos_fijo_tangible" Type="money" Nullable="false" />
+    <Property Name="gasto" Type="money" Nullable="false" />
+    <Property Name="costo" Type="money" Nullable="false" />
+    <Property Name="cuentas_por_pagar" Type="money" Nullable="false" />
+    <Property Name="papiro_capital" Type="money" Nullable="false" />
+    <Property Name="ingreso" Type="money" Nullable="false" />
+    <Property Name="fecha" Type="datetime" />
+    <Property Name="utiles_herramientas" Type="money" Nullable="false" />
+    <Property Name="nominas_pagar" Type="money" />
+    <Property Name="cobro_anticipado" Type="money" />
+  </EntityType>
+  <EntityType Name="bitacora">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="nombre_usuario" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="accion_realizada" Type="varchar(max)" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cliente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="nombre_contacto" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="direccion" Type="varchar(max)" Nullable="false" />
+    <Property Name="direccion_contacto" Type="varchar(max)" />
+    <Property Name="empresa" Type="varchar" MaxLength="50" />
+    <Property Name="preferencia_contacto" Type="varchar(max)" />
+    <Property Name="contacto_brithday" Type="date" />
+    <Property Name="prioridad_fija" Type="int" />
+    <Property Name="privado" Type="int" />
+    <Property Name="cargo" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="cobro_anticipado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_cliente" Type="int" Nullable="false" />
+    <Property Name="cantidad" Type="money" Nullable="false" />
+    <Property Name="tipo_cobro" Type="varchar" MaxLength="25" />
+    <Property Name="descripcion" Type="varchar" MaxLength="25" />
+    <Property Name="fecha" Type="date" />
+  </EntityType>
+  <EntityType Name="comprobante">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_cliente" Type="int" Nullable="false" />
+    <Property Name="id_operacion" Type="int" Nullable="false" />
+    <Property Name="dir_fich_comprobante" Type="varchar(max)" Nullable="false" />
+    <Property Name="cant_hojas_imprimidas" Type="int" Nullable="false" />
+    <Property Name="fecha_ultima_impresion" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="contrato">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_cliente" Type="int" Nullable="false" />
+    <Property Name="id_tipo_contrato" Type="int" Nullable="false" />
+    <Property Name="id_tipo_pago" Type="int" Nullable="false" />
+    <Property Name="cant_dinero" Type="money" />
+    <Property Name="fecha_inic" Type="datetime" Nullable="false" />
+    <Property Name="fecha_fin" Type="datetime" Nullable="false" />
+    <Property Name="terminado" Type="int" />
+    <Property Name="descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="cant_dinero_utilizado" Type="money" />
+    <Property Name="dir_fich_contrato" Type="varchar" Nullable="false" MaxLength="4" />
+  </EntityType>
+  <EntityType Name="costo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_producto" Type="int" Nullable="false" />
+    <Property Name="costo_por_unidad" Type="money" />
+    <Property Name="id_operacion" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cuentas_por_cobrar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_operacion" Type="int" Nullable="false" />
+    <Property Name="ejecutada" Type="int" />
+    <Property Name="id_cliente" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cuentas_por_pagar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="monto" Type="money" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="ejecutada" Type="int" Nullable="false" />
+    <Property Name="id_operacion" Type="int" />
+  </EntityType>
+  <EntityType Name="entrada">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="255" />
+    <Property Name="id_proveedor" Type="int" />
+    <Property Name="importe" Type="money" Nullable="false" />
+    <Property Name="id_pago_efectivo" Type="int" />
+  </EntityType>
+  <EntityType Name="factura">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="dir_fich_factura" Type="varchar(max)" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="id_contrato" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="forma_pago">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="valor" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="forma_pago_efectivo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion" Type="varchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="funciones">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="valor" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="numero" Type="int" Nullable="false" />
+    <Property Name="funcion_padre" Type="int" />
+  </EntityType>
+  <EntityType Name="gasto">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="varchar" Nullable="false" MaxLength="92" />
+    <Property Name="nombre_cuenta" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="nombre_partida" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="gasto" Type="money" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="255" />
+    <Property Name="pendiente" Type="int" />
+    <Property Name="nombre_elemento" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="efectivo_en" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ingreso">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_operacion" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="operacion_3ero">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_proveedor" Type="int" Nullable="false" />
+    <Property Name="id_tipo_operacion_3ero" Type="int" Nullable="false" />
+    <Property Name="cantidad" Type="int" Nullable="false" />
+    <Property Name="id_operacion" Type="int" Nullable="false" />
+    <Property Name="valor_operacion_3ero" Type="money" />
+  </EntityType>
+  <EntityType Name="operacion_producto">
+    <Key>
+      <PropertyRef Name="id_operacion" />
+      <PropertyRef Name="id_producro" />
+    </Key>
+    <Property Name="id_operacion" Type="int" Nullable="false" />
+    <Property Name="id_producro" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="operaciones">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_tipo_operacion" Type="int" />
+    <Property Name="id_cliente" Type="int" Nullable="false" />
+    <Property Name="monto" Type="money" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="id_forma_pago" Type="int" />
+    <Property Name="pendiente" Type="int" />
+    <Property Name="id_contrato" Type="int" />
+    <Property Name="id_comercial" Type="int" />
+    <Property Name="id_disenador" Type="int" />
+    <Property Name="id_operador" Type="int" />
+    <Property Name="gasto" Type="money" />
+    <Property Name="descripcion" Type="varchar" MaxLength="255" />
+    <Property Name="id_tipo_producto" Type="int" />
+    <Property Name="oferta_especial" Type="money" />
+    <Property Name="pendiente_imprimir" Type="int" />
+    <Property Name="id_usuario" Type="int" />
+    <Property Name="valor_tipo_operacion" Type="money" />
+    <Property Name="cantidad" Type="int" Nullable="false" />
+    <Property Name="costo" Type="money" Nullable="false" />
+    <Property Name="facturada" Type="bit" Nullable="false" />
+    <Property Name="id_factura" Type="int" />
+  </EntityType>
+  <EntityType Name="prioridad">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="valor_cant_operaciones" Type="int" />
+    <Property Name="valor_por_ingreso" Type="int" />
+    <Property Name="valor_ambos" Type="int" />
+    <Property Name="id_cliente" Type="int" />
+    <Property Name="fecha" Type="datetime" />
+  </EntityType>
+  <EntityType Name="producto">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="precio" Type="money" Nullable="false" />
+    <Property Name="cantidad" Type="int" Nullable="false" />
+    <Property Name="id_unidad_medida" Type="int" Nullable="false" />
+    <Property Name="cantidad_real" Type="int" Nullable="false" />
+    <Property Name="id_entrada" Type="int" Nullable="false" />
+    <Property Name="codigo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="id_tipo_producto" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="proveedor">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="varchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="rol">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="rol_funciones">
+    <Key>
+      <PropertyRef Name="id_rol" />
+      <PropertyRef Name="id_funcion" />
+    </Key>
+    <Property Name="id_rol" Type="int" Nullable="false" />
+    <Property Name="id_funcion" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="rol_usuario">
+    <Key>
+      <PropertyRef Name="id_usuario" />
+      <PropertyRef Name="id_rol" />
+    </Key>
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="id_rol" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="submayor_activos_fijo_tangible">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="255" />
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="debito" Type="money" />
+    <Property Name="credito" Type="money" />
+    <Property Name="saldo" Type="money" />
+  </EntityType>
+  <EntityType Name="submayor_cobro_anticipado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="debito" Type="money" />
+    <Property Name="credito" Type="money" />
+    <Property Name="saldo" Type="money" />
+  </EntityType>
+  <EntityType Name="submayor_costo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="255" />
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="debito" Type="money" />
+    <Property Name="credito" Type="money" />
+    <Property Name="saldo" Type="money" />
+  </EntityType>
+  <EntityType Name="submayor_cuentas_cobrar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="255" />
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="debito" Type="money" />
+    <Property Name="credito" Type="money" />
+    <Property Name="saldo" Type="money" />
+  </EntityType>
+  <EntityType Name="submayor_cuentas_por_pagar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="255" />
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="debito" Type="money" />
+    <Property Name="credito" Type="money" />
+    <Property Name="saldo" Type="money" />
+  </EntityType>
+  <EntityType Name="submayor_efectivo_banco">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="255" />
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="debito" Type="money" />
+    <Property Name="credito" Type="money" />
+    <Property Name="saldo" Type="money" />
+  </EntityType>
+  <EntityType Name="submayor_efectivo_caja">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="255" />
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="debito" Type="money" />
+    <Property Name="credito" Type="money" />
+    <Property Name="saldo" Type="money" />
+  </EntityType>
+  <EntityType Name="submayor_gasto">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="255" />
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="debito" Type="money" />
+    <Property Name="credito" Type="money" />
+    <Property Name="saldo" Type="money" />
+    <Property Name="id_producto" Type="int" />
+    <Property Name="id_utiles" Type="int" />
+    <Property Name="id_activos_fijos" Type="int" />
+    <Property Name="id_usuario_salario" Type="int" />
+  </EntityType>
+  <EntityType Name="submayor_ingreso">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="255" />
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="debito" Type="money" />
+    <Property Name="credito" Type="money" />
+    <Property Name="saldo" Type="money" />
+  </EntityType>
+  <EntityType Name="submayor_inventario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="255" />
+    <Property Name="debito" Type="money" />
+    <Property Name="credito" Type="money" />
+    <Property Name="saldo" Type="money" />
+  </EntityType>
+  <EntityType Name="submayor_nomina">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="150" />
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="debito" Type="money" />
+    <Property Name="credito" Type="money" />
+    <Property Name="saldo" Type="money" />
+    <Property Name="ultimo_pago" Type="int" />
+  </EntityType>
+  <EntityType Name="submayor_papiro_capital">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="255" />
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="debito" Type="money" />
+    <Property Name="credito" Type="money" />
+    <Property Name="saldo" Type="money" />
+  </EntityType>
+  <EntityType Name="submayor_utiles">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="descipcion" Type="varchar(max)" />
+    <Property Name="id_usuario" Type="int" Nullable="false" />
+    <Property Name="debito" Type="money" />
+    <Property Name="credito" Type="money" />
+    <Property Name="saldo" Type="money" />
+  </EntityType>
+  <EntityType Name="telefonos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="telefono" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="id_tipo_telefono" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tipo_activos_fijos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="valor" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tipo_contrato">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="valor" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tipo_operacion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="valor" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="valor_operacion" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tipo_operacion_3ero">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="valor" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="valor_operacion" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tipo_pago">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="valor" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tipo_producto">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="valor" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tipo_telefono">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="valor" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tipo_utiles">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="valor" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="unidad_medida">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="siglas" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="descripcion" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="user_telef_cliente">
+    <Key>
+      <PropertyRef Name="id_telefono" />
+    </Key>
+    <Property Name="id_telefono" Type="int" Nullable="false" />
+    <Property Name="id_usuario" Type="int" />
+    <Property Name="id_cliente" Type="int" />
+  </EntityType>
+  <EntityType Name="usuarios">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="direccion" Type="varchar(max)" />
+    <Property Name="fecha_nacimiento" Type="date" />
+    <Property Name="preferencias" Type="varchar(max)" />
+    <Property Name="salario_fijo" Type="money" Nullable="false" />
+    <Property Name="por_ciento_operaciones" Type="real" Nullable="false" />
+    <Property Name="pass" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="salario_extra_operaciones" Type="money" />
+    <Property Name="login_nombre" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="activado" Type="bit" Nullable="false" />
+    <Property Name="a_pagar" Type="money" />
+  </EntityType>
+  <EntityType Name="utiles_herramientas">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="precio" Type="money" Nullable="false" />
+    <Property Name="cantidad" Type="int" Nullable="false" />
+    <Property Name="id_unidad_medida" Type="int" Nullable="false" />
+    <Property Name="cantidad_real" Type="int" Nullable="false" />
+    <Property Name="id_entrada" Type="int" Nullable="false" />
+    <Property Name="codigo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="id_tipo_utiles" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="activos_fijos_fk">
+    <End Role="unidad_medida" Type="papiro_finalModel.Store.unidad_medida" Multiplicity="1" />
+    <End Role="activos_fijos" Type="papiro_finalModel.Store.activos_fijos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="unidad_medida">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="activos_fijos">
+        <PropertyRef Name="id_unidad_medida" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="activos_fijos_fk2">
+    <End Role="entrada" Type="papiro_finalModel.Store.entrada" Multiplicity="1" />
+    <End Role="activos_fijos" Type="papiro_finalModel.Store.activos_fijos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="entrada">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="activos_fijos">
+        <PropertyRef Name="id_entrada" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="avisos_fk">
+    <End Role="contrato" Type="papiro_finalModel.Store.contrato" Multiplicity="0..1" />
+    <End Role="avisos" Type="papiro_finalModel.Store.avisos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="contrato">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="avisos">
+        <PropertyRef Name="id_contrato" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="avisos_fk2">
+    <End Role="operaciones" Type="papiro_finalModel.Store.operaciones" Multiplicity="0..1" />
+    <End Role="avisos" Type="papiro_finalModel.Store.avisos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="operaciones">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="avisos">
+        <PropertyRef Name="id_operacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="avisos_fk3">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="0..1" />
+    <End Role="avisos" Type="papiro_finalModel.Store.avisos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="avisos">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="bitacora_fk">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="1" />
+    <End Role="bitacora" Type="papiro_finalModel.Store.bitacora" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="bitacora">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="cobro_anticipado_fk">
+    <End Role="cliente" Type="papiro_finalModel.Store.cliente" Multiplicity="1" />
+    <End Role="cobro_anticipado" Type="papiro_finalModel.Store.cobro_anticipado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cliente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="cobro_anticipado">
+        <PropertyRef Name="id_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="comprobante_fk">
+    <End Role="cliente" Type="papiro_finalModel.Store.cliente" Multiplicity="1" />
+    <End Role="comprobante" Type="papiro_finalModel.Store.comprobante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cliente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="comprobante">
+        <PropertyRef Name="id_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="comprobante_fk2">
+    <End Role="operaciones" Type="papiro_finalModel.Store.operaciones" Multiplicity="1" />
+    <End Role="comprobante" Type="papiro_finalModel.Store.comprobante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="operaciones">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="comprobante">
+        <PropertyRef Name="id_operacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="contrato_fk">
+    <End Role="cliente" Type="papiro_finalModel.Store.cliente" Multiplicity="1" />
+    <End Role="contrato" Type="papiro_finalModel.Store.contrato" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cliente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="contrato">
+        <PropertyRef Name="id_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="contrato_fk2">
+    <End Role="tipo_contrato" Type="papiro_finalModel.Store.tipo_contrato" Multiplicity="1" />
+    <End Role="contrato" Type="papiro_finalModel.Store.contrato" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_contrato">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="contrato">
+        <PropertyRef Name="id_tipo_contrato" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="contrato_fk3">
+    <End Role="tipo_pago" Type="papiro_finalModel.Store.tipo_pago" Multiplicity="1" />
+    <End Role="contrato" Type="papiro_finalModel.Store.contrato" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_pago">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="contrato">
+        <PropertyRef Name="id_tipo_pago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="costo_fk">
+    <End Role="producto" Type="papiro_finalModel.Store.producto" Multiplicity="1" />
+    <End Role="costo" Type="papiro_finalModel.Store.costo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="producto">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="costo">
+        <PropertyRef Name="id_producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="costo_fk2">
+    <End Role="operaciones" Type="papiro_finalModel.Store.operaciones" Multiplicity="1" />
+    <End Role="costo" Type="papiro_finalModel.Store.costo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="operaciones">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="costo">
+        <PropertyRef Name="id_operacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="cuentas_por_cobrar_fk">
+    <End Role="operaciones" Type="papiro_finalModel.Store.operaciones" Multiplicity="1" />
+    <End Role="cuentas_por_cobrar" Type="papiro_finalModel.Store.cuentas_por_cobrar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="operaciones">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="cuentas_por_cobrar">
+        <PropertyRef Name="id_operacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="cuentas_por_cobrar_fk2">
+    <End Role="cliente" Type="papiro_finalModel.Store.cliente" Multiplicity="1" />
+    <End Role="cuentas_por_cobrar" Type="papiro_finalModel.Store.cuentas_por_cobrar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cliente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="cuentas_por_cobrar">
+        <PropertyRef Name="id_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="cuentas_por_pagar_fk">
+    <End Role="operaciones" Type="papiro_finalModel.Store.operaciones" Multiplicity="0..1" />
+    <End Role="cuentas_por_pagar" Type="papiro_finalModel.Store.cuentas_por_pagar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="operaciones">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="cuentas_por_pagar">
+        <PropertyRef Name="id_operacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="entrada_fk">
+    <End Role="proveedor" Type="papiro_finalModel.Store.proveedor" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="entrada" Type="papiro_finalModel.Store.entrada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="proveedor">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="entrada">
+        <PropertyRef Name="id_proveedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="entrada_fk2">
+    <End Role="forma_pago_efectivo" Type="papiro_finalModel.Store.forma_pago_efectivo" Multiplicity="0..1" />
+    <End Role="entrada" Type="papiro_finalModel.Store.entrada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="forma_pago_efectivo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="entrada">
+        <PropertyRef Name="id_pago_efectivo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="factura_fk">
+    <End Role="contrato" Type="papiro_finalModel.Store.contrato" Multiplicity="1" />
+    <End Role="factura" Type="papiro_finalModel.Store.factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="contrato">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="factura">
+        <PropertyRef Name="id_contrato" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_activos_fijos_tipo_activos_fijos">
+    <End Role="tipo_activos_fijos" Type="papiro_finalModel.Store.tipo_activos_fijos" Multiplicity="1" />
+    <End Role="activos_fijos" Type="papiro_finalModel.Store.activos_fijos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_activos_fijos">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="activos_fijos">
+        <PropertyRef Name="id_tipo_activo_fijo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_submayor_gasto_usuarios">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="0..1" />
+    <End Role="submayor_gasto" Type="papiro_finalModel.Store.submayor_gasto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="submayor_gasto">
+        <PropertyRef Name="id_usuario_salario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_submayor_utiles_submayor_utiles">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="1" />
+    <End Role="submayor_utiles" Type="papiro_finalModel.Store.submayor_utiles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="submayor_utiles">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_utiles_herramientas_tipo_utiles">
+    <End Role="tipo_utiles" Type="papiro_finalModel.Store.tipo_utiles" Multiplicity="1" />
+    <End Role="utiles_herramientas" Type="papiro_finalModel.Store.utiles_herramientas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_utiles">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="utiles_herramientas">
+        <PropertyRef Name="id_tipo_utiles" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ingreso_fk">
+    <End Role="operaciones" Type="papiro_finalModel.Store.operaciones" Multiplicity="1" />
+    <End Role="ingreso" Type="papiro_finalModel.Store.ingreso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="operaciones">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ingreso">
+        <PropertyRef Name="id_operacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="operacion_3ero_fk">
+    <End Role="proveedor" Type="papiro_finalModel.Store.proveedor" Multiplicity="1" />
+    <End Role="operacion_3ero" Type="papiro_finalModel.Store.operacion_3ero" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="proveedor">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="operacion_3ero">
+        <PropertyRef Name="id_proveedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="operacion_3ero_fk2">
+    <End Role="tipo_operacion_3ero" Type="papiro_finalModel.Store.tipo_operacion_3ero" Multiplicity="1" />
+    <End Role="operacion_3ero" Type="papiro_finalModel.Store.operacion_3ero" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_operacion_3ero">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="operacion_3ero">
+        <PropertyRef Name="id_tipo_operacion_3ero" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="operacion_3ero_fk3">
+    <End Role="operaciones" Type="papiro_finalModel.Store.operaciones" Multiplicity="1" />
+    <End Role="operacion_3ero" Type="papiro_finalModel.Store.operacion_3ero" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="operaciones">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="operacion_3ero">
+        <PropertyRef Name="id_operacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="operacion_producto_fk">
+    <End Role="operaciones" Type="papiro_finalModel.Store.operaciones" Multiplicity="1" />
+    <End Role="operacion_producto" Type="papiro_finalModel.Store.operacion_producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="operaciones">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="operacion_producto">
+        <PropertyRef Name="id_operacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="operacion_producto_fk2">
+    <End Role="producto" Type="papiro_finalModel.Store.producto" Multiplicity="1" />
+    <End Role="operacion_producto" Type="papiro_finalModel.Store.operacion_producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="producto">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="operacion_producto">
+        <PropertyRef Name="id_producro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="operaciones_fk">
+    <End Role="tipo_operacion" Type="papiro_finalModel.Store.tipo_operacion" Multiplicity="0..1" />
+    <End Role="operaciones" Type="papiro_finalModel.Store.operaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_operacion">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="operaciones">
+        <PropertyRef Name="id_tipo_operacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="operaciones_fk10">
+    <End Role="factura" Type="papiro_finalModel.Store.factura" Multiplicity="0..1" />
+    <End Role="operaciones" Type="papiro_finalModel.Store.operaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="factura">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="operaciones">
+        <PropertyRef Name="id_factura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="operaciones_fk2">
+    <End Role="cliente" Type="papiro_finalModel.Store.cliente" Multiplicity="1" />
+    <End Role="operaciones" Type="papiro_finalModel.Store.operaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cliente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="operaciones">
+        <PropertyRef Name="id_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="operaciones_fk3">
+    <End Role="forma_pago" Type="papiro_finalModel.Store.forma_pago" Multiplicity="0..1" />
+    <End Role="operaciones" Type="papiro_finalModel.Store.operaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="forma_pago">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="operaciones">
+        <PropertyRef Name="id_forma_pago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="operaciones_fk4">
+    <End Role="contrato" Type="papiro_finalModel.Store.contrato" Multiplicity="0..1" />
+    <End Role="operaciones" Type="papiro_finalModel.Store.operaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="contrato">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="operaciones">
+        <PropertyRef Name="id_contrato" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="operaciones_fk5">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="0..1" />
+    <End Role="operaciones" Type="papiro_finalModel.Store.operaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="operaciones">
+        <PropertyRef Name="id_comercial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="operaciones_fk6">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="0..1" />
+    <End Role="operaciones" Type="papiro_finalModel.Store.operaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="operaciones">
+        <PropertyRef Name="id_disenador" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="operaciones_fk7">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="0..1" />
+    <End Role="operaciones" Type="papiro_finalModel.Store.operaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="operaciones">
+        <PropertyRef Name="id_operador" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="operaciones_fk8">
+    <End Role="tipo_producto" Type="papiro_finalModel.Store.tipo_producto" Multiplicity="0..1" />
+    <End Role="operaciones" Type="papiro_finalModel.Store.operaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_producto">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="operaciones">
+        <PropertyRef Name="id_tipo_producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="operaciones_fk9">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="0..1" />
+    <End Role="operaciones" Type="papiro_finalModel.Store.operaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="operaciones">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="prioridad_fk">
+    <End Role="cliente" Type="papiro_finalModel.Store.cliente" Multiplicity="0..1" />
+    <End Role="prioridad" Type="papiro_finalModel.Store.prioridad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cliente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="prioridad">
+        <PropertyRef Name="id_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="producto_fk">
+    <End Role="unidad_medida" Type="papiro_finalModel.Store.unidad_medida" Multiplicity="1" />
+    <End Role="producto" Type="papiro_finalModel.Store.producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="unidad_medida">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="producto">
+        <PropertyRef Name="id_unidad_medida" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="producto_fk2">
+    <End Role="entrada" Type="papiro_finalModel.Store.entrada" Multiplicity="1" />
+    <End Role="producto" Type="papiro_finalModel.Store.producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="entrada">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="producto">
+        <PropertyRef Name="id_entrada" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="producto_fk3">
+    <End Role="tipo_producto" Type="papiro_finalModel.Store.tipo_producto" Multiplicity="1" />
+    <End Role="producto" Type="papiro_finalModel.Store.producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_producto">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="producto">
+        <PropertyRef Name="id_tipo_producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="rol_funciones_fk">
+    <End Role="rol" Type="papiro_finalModel.Store.rol" Multiplicity="1" />
+    <End Role="rol_funciones" Type="papiro_finalModel.Store.rol_funciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="rol">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="rol_funciones">
+        <PropertyRef Name="id_rol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="rol_funciones_fk2">
+    <End Role="funciones" Type="papiro_finalModel.Store.funciones" Multiplicity="1" />
+    <End Role="rol_funciones" Type="papiro_finalModel.Store.rol_funciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="funciones">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="rol_funciones">
+        <PropertyRef Name="id_funcion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="rol_usuario_fk">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="1" />
+    <End Role="rol_usuario" Type="papiro_finalModel.Store.rol_usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="rol_usuario">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="rol_usuario_fk2">
+    <End Role="rol" Type="papiro_finalModel.Store.rol" Multiplicity="1" />
+    <End Role="rol_usuario" Type="papiro_finalModel.Store.rol_usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="rol">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="rol_usuario">
+        <PropertyRef Name="id_rol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="submayor_activos_fijo_tangible_fk">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="1" />
+    <End Role="submayor_activos_fijo_tangible" Type="papiro_finalModel.Store.submayor_activos_fijo_tangible" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="submayor_activos_fijo_tangible">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="submayor_cobro_anticipado_fk">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="1" />
+    <End Role="submayor_cobro_anticipado" Type="papiro_finalModel.Store.submayor_cobro_anticipado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="submayor_cobro_anticipado">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="submayor_costo_fk">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="1" />
+    <End Role="submayor_costo" Type="papiro_finalModel.Store.submayor_costo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="submayor_costo">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="submayor_cuentas_cobrar_fk">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="1" />
+    <End Role="submayor_cuentas_cobrar" Type="papiro_finalModel.Store.submayor_cuentas_cobrar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="submayor_cuentas_cobrar">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="submayor_cuentas_por_pagar_fk">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="1" />
+    <End Role="submayor_cuentas_por_pagar" Type="papiro_finalModel.Store.submayor_cuentas_por_pagar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="submayor_cuentas_por_pagar">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="submayor_efectivo_banco_fk">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="1" />
+    <End Role="submayor_efectivo_banco" Type="papiro_finalModel.Store.submayor_efectivo_banco" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="submayor_efectivo_banco">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="submayor_efectivo_caja_fk">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="1" />
+    <End Role="submayor_efectivo_caja" Type="papiro_finalModel.Store.submayor_efectivo_caja" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="submayor_efectivo_caja">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="submayor_gasto_fk">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="1" />
+    <End Role="submayor_gasto" Type="papiro_finalModel.Store.submayor_gasto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="submayor_gasto">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="submayor_gasto_fk2">
+    <End Role="producto" Type="papiro_finalModel.Store.producto" Multiplicity="0..1" />
+    <End Role="submayor_gasto" Type="papiro_finalModel.Store.submayor_gasto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="producto">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="submayor_gasto">
+        <PropertyRef Name="id_producto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="submayor_gasto_fk3">
+    <End Role="utiles_herramientas" Type="papiro_finalModel.Store.utiles_herramientas" Multiplicity="0..1" />
+    <End Role="submayor_gasto" Type="papiro_finalModel.Store.submayor_gasto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="utiles_herramientas">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="submayor_gasto">
+        <PropertyRef Name="id_utiles" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="submayor_gasto_fk4">
+    <End Role="activos_fijos" Type="papiro_finalModel.Store.activos_fijos" Multiplicity="0..1" />
+    <End Role="submayor_gasto" Type="papiro_finalModel.Store.submayor_gasto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="activos_fijos">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="submayor_gasto">
+        <PropertyRef Name="id_activos_fijos" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="submayor_ingreso_fk">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="1" />
+    <End Role="submayor_ingreso" Type="papiro_finalModel.Store.submayor_ingreso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="submayor_ingreso">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="submayor_inventario_fk">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="1" />
+    <End Role="submayor_inventario" Type="papiro_finalModel.Store.submayor_inventario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="submayor_inventario">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="submayor_nomina_fk">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="1" />
+    <End Role="submayor_nomina" Type="papiro_finalModel.Store.submayor_nomina" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="submayor_nomina">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="submayor_papiro_capital_fk">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="1" />
+    <End Role="submayor_papiro_capital" Type="papiro_finalModel.Store.submayor_papiro_capital" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="submayor_papiro_capital">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="telefonos_fk">
+    <End Role="tipo_telefono" Type="papiro_finalModel.Store.tipo_telefono" Multiplicity="1" />
+    <End Role="telefonos" Type="papiro_finalModel.Store.telefonos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipo_telefono">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="telefonos">
+        <PropertyRef Name="id_tipo_telefono" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="user_telef_cliente_fk">
+    <End Role="telefonos" Type="papiro_finalModel.Store.telefonos" Multiplicity="1" />
+    <End Role="user_telef_cliente" Type="papiro_finalModel.Store.user_telef_cliente" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="telefonos">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user_telef_cliente">
+        <PropertyRef Name="id_telefono" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="user_telef_cliente_fk2">
+    <End Role="usuarios" Type="papiro_finalModel.Store.usuarios" Multiplicity="0..1" />
+    <End Role="user_telef_cliente" Type="papiro_finalModel.Store.user_telef_cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user_telef_cliente">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="user_telef_cliente_fk3">
+    <End Role="cliente" Type="papiro_finalModel.Store.cliente" Multiplicity="0..1" />
+    <End Role="user_telef_cliente" Type="papiro_finalModel.Store.user_telef_cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cliente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="user_telef_cliente">
+        <PropertyRef Name="id_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="utiles_herramientas_fk">
+    <End Role="unidad_medida" Type="papiro_finalModel.Store.unidad_medida" Multiplicity="1" />
+    <End Role="utiles_herramientas" Type="papiro_finalModel.Store.utiles_herramientas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="unidad_medida">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="utiles_herramientas">
+        <PropertyRef Name="id_unidad_medida" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="utiles_herramientas_fk2">
+    <End Role="entrada" Type="papiro_finalModel.Store.entrada" Multiplicity="1" />
+    <End Role="utiles_herramientas" Type="papiro_finalModel.Store.utiles_herramientas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="entrada">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="utiles_herramientas">
+        <PropertyRef Name="id_entrada" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

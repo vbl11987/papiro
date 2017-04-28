@@ -1,0 +1,6 @@
+<Modules>
+  <Module PersistentId="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7" ModuleId="papiro" />
+  <Module PersistentId="d:Miscellaneous Files" ModuleId="mscorlib" />
+  <Module PersistentId="00ACC77D-1901-4C7A-BB8F-8D0F364A58F3" ModuleId="PrintableListView" />
+  <Module PersistentId="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="System.Windows.Forms" />
+</Modules>

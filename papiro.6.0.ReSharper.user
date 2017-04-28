@@ -1,0 +1,486 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:papiro.operaciones">
+      <Item value="monto" priority="3" />
+      <Item value="tipo_operacion" priority="0" />
+      <Item value="id_contrato" priority="1" />
+      <Item value="contrato" priority="3" />
+      <Item value="pendiente_imprimir" priority="0" />
+      <Item value="id" priority="0" />
+      <Item value="cliente" priority="0" />
+      <Item value="fecha" priority="0" />
+      <Item value="descripcion" priority="0" />
+      <Item value="id_usuario" priority="0" />
+      <Item value="id_comercial" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="op" priority="4" />
+      <Item value="_tipoOperacionId" priority="0" />
+      <Item value="_operacionPendiente" priority="5" />
+      <Item value="if" priority="17" />
+      <Item value="addbutton" priority="1" />
+      <Item value="null" priority="2" />
+      <Item value="factura`0" priority="0" />
+      <Item value="false" priority="3" />
+      <Item value="cb_contrato" priority="1" />
+      <Item value="_tipoProductoId" priority="0" />
+      <Item value="foreach" priority="1" />
+      <Item value="_contratosId" priority="0" />
+      <Item value="contract" priority="0" />
+      <Item value="operacionPendiente" priority="0" />
+      <Item value="producto" priority="3" />
+      <Item value="ingreso" priority="2" />
+      <Item value="cuentaPorCobrar" priority="1" />
+      <Item value="cuentasPorCobrar" priority="1" />
+      <Item value="submayor_cuentas_cobrar`0" priority="0" />
+      <Item value="monto" priority="1" />
+      <Item value="id_usuario" priority="1" />
+      <Item value="_user" priority="7" />
+      <Item value="cuentas_por_pagar`0" priority="6" />
+      <Item value="invariantCulture" priority="1" />
+      <Item value="cuenta" priority="6" />
+      <Item value="EfectivoEbComboBox" priority="6" />
+      <Item value="private" priority="2" />
+      <Item value="readonly" priority="0" />
+      <Item value="List" priority="2" />
+      <Item value="int" priority="4" />
+      <Item value="_cuentasPorPagarIds" priority="5" />
+      <Item value="new" priority="7" />
+      <Item value="List&lt;int&gt;" priority="1" />
+      <Item value="cuentasPagarlistView" priority="0" />
+      <Item value="cuentasPorPagar" priority="3" />
+      <Item value="IdnMapping`0" priority="0" />
+      <Item value="descripcionTextBox" priority="0" />
+      <Item value="validationMessage" priority="0" />
+      <Item value="fecha_inicio" priority="0" />
+      <Item value="fechaInicio" priority="0" />
+      <Item value="valorNumericUpDown" priority="0" />
+      <Item value="ejecutada" priority="0" />
+      <Item value="void" priority="0" />
+      <Item value="static" priority="0" />
+      <Item value="string" priority="5" />
+      <Item value="return" priority="0" />
+      <Item value="cuentaPorPagar" priority="7" />
+      <Item value="else" priority="4" />
+      <Item value="true" priority="0" />
+      <Item value="cuentaByKey" priority="4" />
+      <Item value="var" priority="6" />
+      <Item value="GestionarCuentasPagar`0" priority="0" />
+      <Item value="balance`0" priority="0" />
+      <Item value="_entities" priority="1" />
+      <Item value="submayor_cuentas_por_pagar" priority="0" />
+      <Item value="lastBalance" priority="1" />
+      <Item value="switch" priority="0" />
+      <Item value="submayor_efectivo_banco`0" priority="0" />
+      <Item value="aviso" priority="4" />
+      <Item value="Day`0" priority="1" />
+      <Item value="days" priority="1" />
+      <Item value="DateTime`0" priority="0" />
+      <Item value="_cargandoForm" priority="0" />
+      <Item value="NominaForm`0" priority="0" />
+      <Item value="nominaForm" priority="0" />
+      <Item value="entities" priority="5" />
+      <Item value="UnidadMedidaColumn" priority="2" />
+      <Item value="CodigoColumn" priority="1" />
+      <Item value="NombreColumn" priority="0" />
+      <Item value="TipoProductoColumn" priority="1" />
+      <Item value="CantidadColumn" priority="0" />
+      <Item value="PrecioColumn" priority="0" />
+      <Item value="ExistenteColumn" priority="3" />
+      <Item value="um" priority="0" />
+      <Item value="productosDataGridView" priority="6" />
+      <Item value="DataGridViewRow`0" priority="0" />
+      <Item value="row" priority="2" />
+      <Item value="from" priority="0" />
+      <Item value="where" priority="0" />
+      <Item value="continue" priority="1" />
+      <Item value="existenteList" priority="1" />
+      <Item value="object" priority="1" />
+      <Item value="ImporteColumn" priority="0" />
+      <Item value="AumentarCantidadColumn" priority="3" />
+      <Item value="NuevoPrecioColumn" priority="3" />
+      <Item value="for" priority="0" />
+      <Item value="count" priority="0" />
+      <Item value="index" priority="8" />
+      <Item value="bool" priority="1" />
+      <Item value="EntityKey" priority="1" />
+      <Item value="papiro_finalEntities`0" priority="0" />
+      <Item value="prod" priority="0" />
+      <Item value="cantidadAumentar" priority="0" />
+      <Item value="auxProd" priority="2" />
+      <Item value="nuevoprecio" priority="1" />
+      <Item value="cant" priority="0" />
+      <Item value="exist" priority="0" />
+      <Item value="Convert`0" priority="2" />
+      <Item value="aumentarCantidadValue" priority="1" />
+      <Item value="CultureInfo`0" priority="7" />
+      <Item value="user" priority="6" />
+      <Item value="u" priority="2" />
+      <Item value="using" priority="1" />
+      <Item value="System" priority="1" />
+      <Item value="Linq" priority="1" />
+      <Item value="plusColumn" priority="1" />
+      <Item value="TotalColumn" priority="1" />
+      <Item value="salarioFijoColumn" priority="0" />
+      <Item value="comisionColumn" priority="1" />
+      <Item value="Close`0" priority="0" />
+      <Item value="total" priority="1" />
+      <Item value="finanzasToolStripMenuItem" priority="1" />
+      <Item value="Text" priority="0" />
+      <Item value="o" priority="0" />
+      <Item value="decimal" priority="3" />
+      <Item value="comision" priority="3" />
+      <Item value="comiAux" priority="0" />
+      <Item value="comisionTtal" priority="1" />
+      <Item value="operacionesColumn" priority="3" />
+      <Item value="_usersId" priority="3" />
+      <Item value="DetallesOperacionesUsuario`0" priority="0" />
+      <Item value="usuarios`0" priority="0" />
+      <Item value="detalles" priority="0" />
+      <Item value="pagarButton" priority="0" />
+      <Item value="efectivoEncomboBox" priority="0" />
+      <Item value="_ejecutarOperacionPendiente" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ComboBox">
+      <Item value="Items" priority="1" />
+      <Item value="SelectedIndex" priority="35" />
+      <Item value="Enabled" priority="3" />
+      <Item value="RecreatingHandle" priority="0" />
+      <Item value="Text" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ComboBox+ObjectCollection">
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="5" />
+      <Item value="Find`0" priority="1" />
+      <Item value="FindIndex`0" priority="0" />
+      <Item value="Last`1" priority="1" />
+      <Item value="Clear`0" priority="1" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:papiro.tipo_operacion">
+      <Item value="id" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Button">
+      <Item value="Enabled" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:papiro.tipo_producto">
+      <Item value="id" priority="1" />
+      <Item value="valor" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:papiro.contrato">
+      <Item value="id" priority="0" />
+      <Item value="cliente" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:papiro.producto">
+      <Item value="codigo" priority="2" />
+      <Item value="tipo_producto" priority="2" />
+      <Item value="unidad_medida" priority="0" />
+      <Item value="id" priority="0" />
+      <Item value="cantidad" priority="0" />
+      <Item value="precio" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:papiro.usuarios">
+      <Item value="login_nombre" priority="1" />
+      <Item value="id" priority="3" />
+      <Item value="nombre" priority="2" />
+      <Item value="salario_fijo" priority="3" />
+      <Item value="salario_extra_operaciones" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:papiro.cuentas_por_cobrar">
+      <Item value="operaciones" priority="1" />
+      <Item value="cliente" priority="0" />
+      <Item value="ejecutada" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:papiro.cliente">
+      <Item value="nombre" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:papiro.papiro_finalEntities">
+      <Item value="AddTosubmayor_cuentas_cobrar`0" priority="0" />
+      <Item value="balance" priority="1" />
+      <Item value="AddTocuentas_por_pagar`0" priority="1" />
+      <Item value="AddTosubmayor_cuentas_por_pagar`0" priority="0" />
+      <Item value="AddTosubmayor_efectivo_banco`0" priority="0" />
+      <Item value="cuentas_por_pagar" priority="0" />
+      <Item value="tipo_producto" priority="0" />
+      <Item value="unidad_medida" priority="0" />
+      <Item value="GetObjectByKey`0" priority="2" />
+      <Item value="usuarios" priority="0" />
+      <Item value="SaveChanges`0" priority="0" />
+      <Item value="operaciones" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:papiro.balance">
+      <Item value="cuentas_por_cobrar" priority="1" />
+      <Item value="ingreso" priority="0" />
+      <Item value="cuentas_por_pagar" priority="1" />
+      <Item value="efectivo_banco" priority="1" />
+      <Item value="gasto" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectSet`1">
+      <Item value="ToList`1" priority="2" />
+      <Item value="Where`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable`1">
+      <Item value="ToString`0" priority="0" />
+      <Item value="Value" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:papiro.cuentas_por_pagar">
+      <Item value="monto" priority="4" />
+      <Item value="id" priority="1" />
+      <Item value="ejecutada" priority="1" />
+      <Item value="efectivo_caja" priority="2" />
+      <Item value="efectivo_banco" priority="3" />
+      <Item value="descripcion" priority="0" />
+      <Item value="fecha_inicio" priority="1" />
+      <Item value="fecha_fin" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Decimal">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectQuery`1">
+      <Item value="ToList`1" priority="0" />
+      <Item value="Where`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListView">
+      <Item value="ItemActivate" priority="0" />
+      <Item value="Items" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListView+ListViewItemCollection">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Trim`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DateTimePicker">
+      <Item value="Validated" priority="0" />
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.NumericUpDown">
+      <Item value="Validate`0" priority="0" />
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="ToList`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListViewItem">
+      <Item value="Index" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:papiro.formularios.GestionarCuentasPagar">
+      <Item value="ShowDialog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="ToString`0" priority="0" />
+      <Item value="Date" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:papiro.formularios.CargandoForm">
+      <Item value="SetValue`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:papiro.formularios.NominaForm">
+      <Item value="ShowDialog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:papiro.unidad_medida">
+      <Item value="siglas" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewRow">
+      <Item value="Cells" priority="4" />
+      <Item value="Index" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewCell">
+      <Item value="Value" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DataGridView">
+      <Item value="Rows" priority="2" />
+      <Item value="Enabled" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewRowCollection">
+      <Item value="Cast`1" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Where`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ToolStripComboBox">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToInt32`0" priority="2" />
+      <Item value="ToDecimal`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Globalization.CultureInfo">
+      <Item value="InvariantCulture" priority="15" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBoxIcon">
+      <Item value="Information" priority="0" />
+      <Item value="Question" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBoxButtons">
+      <Item value="YesNo" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DialogResult">
+      <Item value="Yes" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ToolStripMenuItem">
+      <Item value="Enabled" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewCellEventArgs">
+      <Item value="RowIndex" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:papiro.formularios.DetallesOperacionesUsuario">
+      <Item value="ShowDialog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@papiro.formularios.TipoReporte">
+      <Item value="Operaciones" priority="78" />
+      <Item value="CuentasxPagar" priority="27" />
+      <Item value="CuentasPorPagar" priority="50" />
+      <Item value="CuentasPorCobrar" priority="111" />
+      <Item value="EstadoCuentas" priority="55" />
+      <Item value="Usuarios" priority="53" />
+      <Item value="Clientes" priority="27" />
+      <Item value="Contratos" priority="27" />
+      <Item value="Productos" priority="27" />
+      <Item value="Proveedores" priority="27" />
+      <Item value="ClientesMasOperaciones" priority="50" />
+      <Item value="OperacionesMasRealizadas" priority="55" />
+      <Item value="CostoOperaciones" priority="55" />
+      <Item value="ParticipacionUsuarios" priority="27" />
+      <Item value="Utilidad" priority="27" />
+      <Item value="Submayores" priority="27" />
+      <Item value="SMActivosFijosTangibles" priority="55" />
+      <Item value="SMCosto" priority="55" />
+      <Item value="SMCuentasPorCobrar" priority="55" />
+      <Item value="SMCuentasPorPagar" priority="55" />
+      <Item value="SMEfectivoEnBanco" priority="55" />
+      <Item value="SMEfectivoEnCaja" priority="55" />
+      <Item value="SMGasto" priority="55" />
+      <Item value="SMIngreso" priority="55" />
+      <Item value="SMInventario" priority="55" />
+      <Item value="SMPapiroCapital" priority="55" />
+    </ItemStatistics>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="dataSetOperaciones" priority="29" />
+      <Item value="creportOperaciones" priority="29" />
+      <Item value="dataSetCuentasPorPagar" priority="29" />
+      <Item value="creportCuentasPorPagar" priority="29" />
+      <Item value="dataSetCuentasPorCobrar" priority="29" />
+      <Item value="creportCuentasPorCobrar" priority="29" />
+      <Item value="dataSetEstadoCuentas" priority="29" />
+      <Item value="creportEstadoCuentas" priority="29" />
+      <Item value="crystalReportViewer" priority="31" />
+      <Item value="switch" priority="31" />
+      <Item value="comboBox_kindReport" priority="58" />
+      <Item value="case" priority="31" />
+      <Item value="break" priority="31" />
+      <Item value="DefineAndGenerateReport`0" priority="63" />
+      <Item value="TipoReporte`0" priority="95" />
+      <Item value="dataSetClientesMasOperaciones" priority="29" />
+      <Item value="creportClientesMasOperaciones" priority="29" />
+      <Item value="dataSetOperacionesMasRealizadas" priority="29" />
+      <Item value="creportTOperacionesMasRealizadas" priority="29" />
+      <Item value="dataSetCostoOperaciones" priority="29" />
+      <Item value="creportCostoOperaciones" priority="29" />
+      <Item value="dataSetSubMayores" priority="26" />
+      <Item value="creportSMActivosFijosTangibles" priority="29" />
+      <Item value="creportSMCosto" priority="29" />
+      <Item value="creportSMCuentasPorCobrar" priority="29" />
+      <Item value="creportSMCuentasPorPagar" priority="29" />
+      <Item value="creportSMEfectivoBanco" priority="29" />
+      <Item value="creportSMEfectivoCaja" priority="29" />
+      <Item value="creportSMGasto" priority="29" />
+      <Item value="creportSMIngreso" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CrystalDecisions.Windows.Forms.CrystalReportViewer">
+      <Item value="Refresh`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Doc Comment tags">
+      <Item value="&lt;!----&gt;" priority="4" />
+      <Item value="&lt;see cref=&quot;&quot;/&gt;" priority="4" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:FormularioPrincipal.Designer.cs" caret="0" fromTop="0" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/f:Model1.Designer.cs" caret="371255" fromTop="10" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:CerrarCuentaPorCobrar.cs" caret="2324" fromTop="18" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:GestionarCuentasPagar.cs" caret="16972" fromTop="15" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:GestionarTipoOperacion.cs" caret="1452" fromTop="15" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:GestionarUsuarios.cs" caret="22161" fromTop="15" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ListarBitacora.cs" caret="2227" fromTop="15" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:OperacionDisenno.cs" caret="8356" fromTop="15" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:OperacionesPendientes.cs" caret="2710" fromTop="16" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:InventarioCostoForm.cs" caret="5994" fromTop="14" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:InventarioGastoForm.cs" caret="4580" fromTop="0" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:GestionarContratos.cs" caret="18503" fromTop="9" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:GestionarClientes.cs" caret="22769" fromTop="21" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:CerrarCuentaPorPagar.cs" caret="7573" fromTop="38" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:Login.cs" caret="1713" fromTop="15" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/f:App.Config" caret="294" fromTop="2" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:EntradaProductosForm.cs" caret="19688" fromTop="14" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:NominaForm.Designer.cs" caret="0" fromTop="0" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:NominaForm.cs" caret="5949" fromTop="23" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:DetallesOperacionesUser.cs" caret="1340" fromTop="19" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.Designer.cs" caret="0" fromTop="0" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:Reportes/d:DataSets/f:dataSetOperaciones.cs" caret="167" fromTop="6" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:OperacionImpresion.cs" caret="7691" fromTop="6" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:FormularioPrincipal.cs" caret="132" fromTop="6" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="1117" fromTop="18" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="18091" fromTop="29" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="18091" fromTop="10" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:FormularioPrincipal.cs" caret="18019" fromTop="15" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:FormularioPrincipal.cs" caret="17896" fromTop="9" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="1175" fromTop="14" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="15879" fromTop="10" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="5182" fromTop="23" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="5793" fromTop="30" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="18129" fromTop="28" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="6379" fromTop="23" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="6011" fromTop="19" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="20132" fromTop="28" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:FormularioPrincipal.cs" caret="132" fromTop="6" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="710" fromTop="12" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="20207" fromTop="29" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="8651" fromTop="15" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="8815" fromTop="18" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="9764" fromTop="30" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="9821" fromTop="23" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="9980" fromTop="26" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="10960" fromTop="30" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="11552" fromTop="30" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="12140" fromTop="30" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="13260" fromTop="30" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="13836" fromTop="30" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="14426" fromTop="30" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="14326" fromTop="28" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:formularios/f:ReporteForm.cs" caret="12835" fromTop="9" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:Reportes/d:DataSets/f:dataSetOperaciones.cs" caret="0" fromTop="0" />
+      <File id="CA37AA3A-6A09-4799-ACD8-0ECB68256AE7/d:Reportes/d:DataSets/f:dataSetOperaciones.cs" caret="167" fromTop="6" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

@@ -1,0 +1,780 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA37AA3A-6A09-4799-ACD8-0ECB68256AE7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>papiro</RootNamespace>
+    <AssemblyName>papiro</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>papiro.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\iTextSharpSample\iTextSharpSample\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="formularios\ActivosFijosGastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\ActivosFijosGastos.Designer.cs">
+      <DependentUpon>ActivosFijosGastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\Balance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\Balance.Designer.cs">
+      <DependentUpon>Balance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\CerrarCuentaPorCobrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\CerrarCuentaPorCobrar.designer.cs">
+      <DependentUpon>CerrarCuentaPorCobrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\CerrarCuentaPorPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\CerrarCuentaPorPagar.designer.cs">
+      <DependentUpon>CerrarCuentaPorPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\BalanceComprobacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\BalanceComprobacion.designer.cs">
+      <DependentUpon>BalanceComprobacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\CierreCuentasNominales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\CierreCuentasNominales.Designer.cs">
+      <DependentUpon>CierreCuentasNominales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\CobrosAnticipados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\CobrosAnticipados.Designer.cs">
+      <DependentUpon>CobrosAnticipados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\CostoPorTipoOperacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\CostoPorTipoOperacion.Designer.cs">
+      <DependentUpon>CostoPorTipoOperacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\DetallesGastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\DetallesGastos.Designer.cs">
+      <DependentUpon>DetallesGastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\DetallesGastosXPartidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\DetallesGastosXPartidas.Designer.cs">
+      <DependentUpon>DetallesGastosXPartidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\DetallesOtrosGastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\DetallesOtrosGastos.Designer.cs">
+      <DependentUpon>DetallesOtrosGastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\EliminarOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\EliminarOperaciones.Designer.cs">
+      <DependentUpon>EliminarOperaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\EntradaActivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\EntradaActivos.Designer.cs">
+      <DependentUpon>EntradaActivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\EntradaUtiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\EntradaUtiles.Designer.cs">
+      <DependentUpon>EntradaUtiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\EstadoResultadosVerDetalles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\EstadoResultadosVerDetalles.Designer.cs">
+      <DependentUpon>EstadoResultadosVerDetalles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\EstadoResultadosVerDetallesGastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\EstadoResultadosVerDetallesGastos.Designer.cs">
+      <DependentUpon>EstadoResultadosVerDetallesGastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\EstadoResultadosVerDetallesIngresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\EstadoResultadosVerDetallesIngresos.Designer.cs">
+      <DependentUpon>EstadoResultadosVerDetallesIngresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\EstadoResultadosVerDetallesUtilidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\EstadoResultadosVerDetallesUtilidades.Designer.cs">
+      <DependentUpon>EstadoResultadosVerDetallesUtilidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\GestionarTipoActivosFijos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\GestionarTipoActivosFijos.Designer.cs">
+      <DependentUpon>GestionarTipoActivosFijos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\GestionarTipoUtiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\GestionarTipoUtiles.Designer.cs">
+      <DependentUpon>GestionarTipoUtiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\IngresoPorTipoOperacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\IngresoPorTipoOperacion.Designer.cs">
+      <DependentUpon>IngresoPorTipoOperacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\OperacionCobroAnticipado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\OperacionCobroAnticipado.Designer.cs">
+      <DependentUpon>OperacionCobroAnticipado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\UtilesHerramGasto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\UtilesHerramGasto.Designer.cs">
+      <DependentUpon>UtilesHerramGasto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\UtilidadPorTipoOperacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\UtilidadPorTipoOperacion.Designer.cs">
+      <DependentUpon>UtilidadPorTipoOperacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\MostrarFacturasPorCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\MostrarFacturasPorCliente.designer.cs">
+      <DependentUpon>MostrarFacturasPorCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\GestionarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\GestionarProveedor.designer.cs">
+      <DependentUpon>GestionarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FacturarOperacionImpresion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FacturarOperacionImpresion.Designer.cs">
+      <DependentUpon>FacturarOperacionImpresion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\EstadoResultados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\EstadoResultados.designer.cs">
+      <DependentUpon>EstadoResultados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\MostrarFacturasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\MostrarFacturasForm.designer.cs">
+      <DependentUpon>MostrarFacturasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\SeleccionOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\SeleccionOperaciones.Designer.cs">
+      <DependentUpon>SeleccionOperaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\CostoPorOperaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\CostoPorOperaciones.designer.cs">
+      <DependentUpon>CostoPorOperaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\TransferirCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\TransferirCaja.Designer.cs">
+      <DependentUpon>TransferirCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\DetallesOperacionesUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\DetallesOperacionesUser.Designer.cs">
+      <DependentUpon>DetallesOperacionesUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\Extracción.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\Extracción.Designer.cs">
+      <DependentUpon>Extracción.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\Gastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\Gastos.Designer.cs">
+      <DependentUpon>Gastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\GestionarTipoOperacion3ero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\GestionarTipoOperacion3ero.designer.cs">
+      <DependentUpon>GestionarTipoOperacion3ero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\NominaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\NominaForm.Designer.cs">
+      <DependentUpon>NominaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\OperacionDisenno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\OperacionDisenno.designer.cs">
+      <DependentUpon>OperacionDisenno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\GestionarTipoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\GestionarTipoProducto.designer.cs">
+      <DependentUpon>GestionarTipoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\GestionarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\GestionarClientes.designer.cs">
+      <DependentUpon>GestionarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\GestionarContratos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\GestionarContratos.designer.cs">
+      <DependentUpon>GestionarContratos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\GestionarTelefono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\GestionarTelefono.designer.cs">
+      <DependentUpon>GestionarTelefono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\GestionarTipoOperacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\GestionarTipoOperacion.designer.cs">
+      <DependentUpon>GestionarTipoOperacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\GestionarUnidadMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\GestionarUnidadMedida.designer.cs">
+      <DependentUpon>GestionarUnidadMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\GestionarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\GestionarUsuarios.designer.cs">
+      <DependentUpon>GestionarUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\InventarioGastoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\InventarioGastoForm.Designer.cs">
+      <DependentUpon>InventarioGastoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\InventarioCostoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\InventarioCostoForm.Designer.cs">
+      <DependentUpon>InventarioCostoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\EntradaProductosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\EntradaProductosForm.Designer.cs">
+      <DependentUpon>EntradaProductosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\ListarBitacora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\ListarBitacora.Designer.cs">
+      <DependentUpon>ListarBitacora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\Cargando.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\Cargando.Designer.cs">
+      <DependentUpon>Cargando.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FormularioPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FormularioPrincipal.Designer.cs">
+      <DependentUpon>FormularioPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\OperacionesPendientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\OperacionesPendientes.Designer.cs">
+      <DependentUpon>OperacionesPendientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\OperacionImpresion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\OperacionImpresion.designer.cs">
+      <DependentUpon>OperacionImpresion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\ProveedorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\ProveedorForm.Designer.cs">
+      <DependentUpon>ProveedorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\TransferirBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\TransferirBanco.Designer.cs">
+      <DependentUpon>TransferirBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\oepracionesXTipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\oepracionesXTipo.Designer.cs">
+      <DependentUpon>oepracionesXTipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\operacionesXClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\operacionesXClientes.Designer.cs">
+      <DependentUpon>operacionesXClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteActivosFijos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteActivosFijos.Designer.cs">
+      <DependentUpon>ReporteActivosFijos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\reporteCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\reporteCliente.Designer.cs">
+      <DependentUpon>reporteCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteCobrosAnticipados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteCobrosAnticipados.Designer.cs">
+      <DependentUpon>ReporteCobrosAnticipados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\reporteProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\reporteProductos.Designer.cs">
+      <DependentUpon>reporteProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteUtiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteUtiles.Designer.cs">
+      <DependentUpon>ReporteUtiles.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="formularios\ActivosFijosGastos.resx">
+      <DependentUpon>ActivosFijosGastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\Balance.resx">
+      <DependentUpon>Balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\CerrarCuentaPorCobrar.resx">
+      <DependentUpon>CerrarCuentaPorCobrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\CerrarCuentaPorPagar.resx">
+      <DependentUpon>CerrarCuentaPorPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\BalanceComprobacion.resx">
+      <DependentUpon>BalanceComprobacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\CierreCuentasNominales.resx">
+      <DependentUpon>CierreCuentasNominales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\CobrosAnticipados.resx">
+      <DependentUpon>CobrosAnticipados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\CostoPorTipoOperacion.resx">
+      <DependentUpon>CostoPorTipoOperacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\DetallesGastos.resx">
+      <DependentUpon>DetallesGastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\DetallesGastosXPartidas.resx">
+      <DependentUpon>DetallesGastosXPartidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\DetallesOtrosGastos.resx">
+      <DependentUpon>DetallesOtrosGastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\EliminarOperaciones.resx">
+      <DependentUpon>EliminarOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\EntradaActivos.resx">
+      <DependentUpon>EntradaActivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\EntradaUtiles.resx">
+      <DependentUpon>EntradaUtiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\EstadoResultadosVerDetalles.resx">
+      <DependentUpon>EstadoResultadosVerDetalles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\EstadoResultadosVerDetallesGastos.resx">
+      <DependentUpon>EstadoResultadosVerDetallesGastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\EstadoResultadosVerDetallesIngresos.resx">
+      <DependentUpon>EstadoResultadosVerDetallesIngresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\EstadoResultadosVerDetallesUtilidades.resx">
+      <DependentUpon>EstadoResultadosVerDetallesUtilidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\GestionarTipoActivosFijos.resx">
+      <DependentUpon>GestionarTipoActivosFijos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\GestionarTipoUtiles.resx">
+      <DependentUpon>GestionarTipoUtiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\IngresoPorTipoOperacion.resx">
+      <DependentUpon>IngresoPorTipoOperacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\OperacionCobroAnticipado.resx">
+      <DependentUpon>OperacionCobroAnticipado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\UtilesHerramGasto.resx">
+      <DependentUpon>UtilesHerramGasto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\UtilidadPorTipoOperacion.resx">
+      <DependentUpon>UtilidadPorTipoOperacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\MostrarFacturasPorCliente.resx">
+      <DependentUpon>MostrarFacturasPorCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\GestionarProveedor.resx">
+      <DependentUpon>GestionarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FacturarOperacionImpresion.resx">
+      <DependentUpon>FacturarOperacionImpresion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\EstadoResultados.resx">
+      <DependentUpon>EstadoResultados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\MostrarFacturasForm.resx">
+      <DependentUpon>MostrarFacturasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\SeleccionOperaciones.resx">
+      <DependentUpon>SeleccionOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\CostoPorOperaciones.resx">
+      <DependentUpon>CostoPorOperaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\TransferirCaja.resx">
+      <DependentUpon>TransferirCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\DetallesOperacionesUser.resx">
+      <DependentUpon>DetallesOperacionesUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\Extracción.resx">
+      <DependentUpon>Extracción.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\Gastos.resx">
+      <DependentUpon>Gastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\GestionarTipoOperacion3ero.resx">
+      <DependentUpon>GestionarTipoOperacion3ero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\NominaForm.resx">
+      <DependentUpon>NominaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\OperacionDisenno.resx">
+      <DependentUpon>OperacionDisenno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\GestionarTipoProducto.resx">
+      <DependentUpon>GestionarTipoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\GestionarClientes.resx">
+      <DependentUpon>GestionarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\GestionarContratos.resx">
+      <DependentUpon>GestionarContratos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\GestionarTelefono.resx">
+      <DependentUpon>GestionarTelefono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\GestionarTipoOperacion.resx">
+      <DependentUpon>GestionarTipoOperacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\GestionarUnidadMedida.resx">
+      <DependentUpon>GestionarUnidadMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\GestionarUsuarios.resx">
+      <DependentUpon>GestionarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\InventarioGastoForm.resx">
+      <DependentUpon>InventarioGastoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\InventarioCostoForm.resx">
+      <DependentUpon>InventarioCostoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\EntradaProductosForm.resx">
+      <DependentUpon>EntradaProductosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\ListarBitacora.resx">
+      <DependentUpon>ListarBitacora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\Cargando.resx">
+      <DependentUpon>Cargando.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FormularioPrincipal.resx">
+      <DependentUpon>FormularioPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\OperacionesPendientes.resx">
+      <DependentUpon>OperacionesPendientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\OperacionImpresion.resx">
+      <DependentUpon>OperacionImpresion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\ProveedorForm.resx">
+      <DependentUpon>ProveedorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\TransferirBanco.resx">
+      <DependentUpon>TransferirBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reportes\oepracionesXTipo.resx">
+      <DependentUpon>oepracionesXTipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\operacionesXClientes.resx">
+      <DependentUpon>operacionesXClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteActivosFijos.resx">
+      <DependentUpon>ReporteActivosFijos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\reporteCliente.resx">
+      <DependentUpon>reporteCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteCobrosAnticipados.resx">
+      <DependentUpon>ReporteCobrosAnticipados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\reporteProductos.resx">
+      <DependentUpon>reporteProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteUtiles.resx">
+      <DependentUpon>ReporteUtiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App.Config" />
+    <None Include="papiro_finalEntities1.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cargando_papiro_final.jpg" />
+    <None Include="resources\agt_add-to-autorun.png" />
+    <None Include="resources\add_user.png" />
+    <None Include="resources\adduser24.png" />
+    <None Include="resources\deleteuser24.png" />
+    <None Include="resources\cancel.png" />
+    <None Include="resources\2.png" />
+    <Content Include="papiro.ico" />
+    <None Include="resources\business.png" />
+    <None Include="resources\add_usergrande.png" />
+    <Content Include="resources\delete_small.gif" />
+    <None Include="resources\easymoblog.png" />
+    <Content Include="resources\edit_add.png" />
+    <None Include="resources\FUTURAB.TTF" />
+    <None Include="resources\logo.JPG" />
+    <None Include="resources\exit.png" />
+    <None Include="resources\find.png" />
+    <None Include="resources\locked.png" />
+    <None Include="resources\edit_remove.png" />
+    <None Include="resources\LaST %28Cobalt%29 Word.png" />
+    <None Include="resources\forward.png" />
+    <None Include="resources\LaST %28Cobalt%29 Excel.png" />
+    <Content Include="resources\mainform.jpg" />
+    <Content Include="resources\modify1.gif" />
+    <None Include="resources\reportBack.jpg" />
+    <None Include="resources\save_all.png" />
+    <None Include="resources\ok.png" />
+    <None Include="resources\money.png" />
+    <None Include="resources\user24.png" />
+    <None Include="resources\personal.png" />
+    <None Include="resources\papiro_name.png" />
+    <None Include="resources\todo.png" />
+    <Content Include="resources\viewmag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Printable ListView\TestSolution\PrintableListView\PrintableListView.csproj">
+      <Project>{00ACC77D-1901-4C7A-BB8F-8D0F364A58F3}</Project>
+      <Name>PrintableListView</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
